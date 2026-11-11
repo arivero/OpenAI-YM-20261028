@@ -28,6 +28,7 @@ Each note answers one question raised after the main review. They are commentary
 | [notes/02-GENERALITY.md](notes/02-GENERALITY.md) | Which gauge groups does the theorem cover? |
 | [notes/03-GUIDING-EXAMPLES.md](notes/03-GUIDING-EXAMPLES.md) | What do SU(4), SU(3)×U(1) and broken su(4) teach about the proof? |
 | [notes/04-KALUZA-KLEIN.md](notes/04-KALUZA-KLEIN.md) | Can the proof be reshaped into a Kaluza–Klein setting? |
+| [notes/05-DIMENSIONS-AND-STRINGS.md](notes/05-DIMENSIONS-AND-STRINGS.md) | What is special about four dimensions, and where does string theory stand (2, 10 and 26 dimensions)? |
 
 ## Findings in brief
 
