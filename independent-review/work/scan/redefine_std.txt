@@ -1,0 +1,3 @@
+PublicTheory.lean:79: structure HilbertSpace where
+YM/Climb/Cells.lean:17: abbrev Matrix (d e : ℕ) (S : Table L) := S.Field d →L[ℂ] S.Field e
+YM/Dash/Scope.lean:122: abbrev Matrix (p : Bin S) (d : ℕ) (f : Order) := approaches f.fuse (p d)

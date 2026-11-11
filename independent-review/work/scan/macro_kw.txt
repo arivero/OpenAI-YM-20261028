@@ -1,0 +1,1 @@
+YM/Examples/SU2.lean:37: local macro "entry" : tactic => `(tactic| (ext i j; fin_cases i <;> fin_cases j <;> simp [Matrix.star_eq_conjTranspose, Complex.star_def,A,B,C,Matrix.mul_apply,Fin.sum_univ_two,Complex.mul_re,Complex.

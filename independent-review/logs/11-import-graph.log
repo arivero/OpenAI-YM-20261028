@@ -1,0 +1,65 @@
+{
+ "Challenge": {
+  "project_modules": 4,
+  "project_lines": 617,
+  "YM_modules": 0,
+  "external_roots": [
+   "Mathlib"
+  ]
+ },
+ "ChallengeSpec": {
+  "project_modules": 3,
+  "project_lines": 610,
+  "YM_modules": 0,
+  "external_roots": [
+   "Mathlib"
+  ]
+ },
+ "Solution": {
+  "project_modules": 9467,
+  "project_lines": 996488,
+  "YM_modules": 9456,
+  "external_roots": [
+   "Lean",
+   "Mathlib"
+  ]
+ },
+ "Construction": {
+  "project_modules": 9466,
+  "project_lines": 996477,
+  "YM_modules": 9456,
+  "external_roots": [
+   "Lean",
+   "Mathlib"
+  ]
+ },
+ "ConcreteSU2": {
+  "project_modules": 9469,
+  "project_lines": 996621,
+  "YM_modules": 9457,
+  "external_roots": [
+   "Lean",
+   "Mathlib"
+  ]
+ },
+ "VerifyJoint": {
+  "project_modules": 9470,
+  "project_lines": 996729,
+  "YM_modules": 9457,
+  "external_roots": [
+   "Lean",
+   "Mathlib"
+  ]
+ },
+ "YM": {
+  "project_modules": 9457,
+  "project_lines": 995330,
+  "YM_modules": 9456,
+  "external_roots": [
+   "Lean",
+   "Mathlib"
+  ]
+ }
+}
+tracked modules: 9477  in Solution closure: 9467  not in closure: 10
+max import depth from Solution: 103

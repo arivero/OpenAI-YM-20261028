@@ -1,0 +1,13 @@
+'ReviewProbe.amplitude_positive_of_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewProbe.regular_constInsertions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewProbe.empty_cluster' depends on axioms: [propext, Classical.choice, Quot.sound]
+STATEMENT_CLOSURE constants=7122 byModuleRoot=[(Mathlib, 6043),
+ (Init, 891),
+ (PublicWilson, 29),
+ (Batteries, 8),
+ (ChallengeSpec, 64),
+ (PublicTheory, 87)]
+STATEMENT_CLOSURE projectConstants=180
+REFERENCE_THEOREM_AXIOMS (expected to contain sorryAx) [propext, sorryAx, Classical.choice, Quot.sound]
+WALL=9.74 s MAXRSS=6862476 KB
+EXIT=0

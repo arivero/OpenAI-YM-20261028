@@ -1,0 +1,1 @@
+verification/Inventory.lean:16: if ci.getUsedConstantsAsSet.contains `sorryAx then

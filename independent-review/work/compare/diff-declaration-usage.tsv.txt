@@ -1,0 +1,8 @@
+249566,249568c249566,249568
+< YM.Work.F05.PiDensity	_private.YM.Work.F05.PiDensity.0.YM.Work.F05.lprodFin	used	YM.SharpGram.habitat	YM.Work.F05.lprod	17
+< YM.Work.F05.PiDensity	YM.Work.F05.lprod	used	YM.SharpGram.habitat	YM.Work.F05.piDensity	43
+< YM.Work.F05.PiDensity	YM.Work.F05.piDensity	used	YM.SharpGram.habitat	_private.YM.SectorNext.GAUSSIAN_SECTOR_CHANGE.Gaussian.0.YM.Next.SectorChange.Gaussian.coins_charge	51
+---
+> YM.Work.F05.PiDensity	_private.YM.Work.F05.PiDensity.0.YM.Work.F05.lprodFin	used	YM.SharpGram.habitat	YM.Work.F05.lprod	19
+> YM.Work.F05.PiDensity	YM.Work.F05.lprod	used	YM.SharpGram.habitat	YM.Work.F05.piDensity	45
+> YM.Work.F05.PiDensity	YM.Work.F05.piDensity	used	YM.SharpGram.habitat	_private.YM.SectorNext.GAUSSIAN_SECTOR_CHANGE.Gaussian.0.YM.Next.SectorChange.Gaussian.coins_charge	53

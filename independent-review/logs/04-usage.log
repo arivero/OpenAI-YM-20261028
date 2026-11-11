@@ -1,0 +1,5 @@
+START 2026-11-11T08:17:35+01:00 cwd=/path/to/ym-release/review/run-usage cmd=lake -d /path/to/ym-release/OpenAI-YM-20261028 env lean -j1 -DmaxHeartbeats=0 /path/to/ym-release/OpenAI-YM-20261028/verification/Usage.lean
+/path/to/ym-release/OpenAI-YM-20261028/verification/Usage.lean:1:0: error: failed to read file '/path/to/ym-release/OpenAI-YM-20261028/.lake/build/lib/lean/ConcreteSU2.olean', incompatible header
+Command exited with non-zero status 1
+TIME wall=4.69 s maxrss=848952 KB
+END 2026-11-11T08:17:40+01:00 EXIT=1 WALL_SECONDS=5

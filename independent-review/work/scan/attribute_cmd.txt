@@ -1,0 +1,151 @@
+ChallengeSpec.lean:49: attribute [instance] Hierarchy.fieldAdd Hierarchy.fieldSpace Hierarchy.fieldFinite
+PublicTheory.lean:85: attribute [instance] HilbertSpace.normedAddCommGroup
+PublicTheory.lean:86: attribute [instance] HilbertSpace.innerProductSpace
+PublicTheory.lean:87: attribute [instance] HilbertSpace.completeSpace
+PublicTheory.lean:101: attribute [instance] FieldLabels.addCommGroup
+PublicTheory.lean:102: attribute [instance] FieldLabels.module
+PublicTheory.lean:204: attribute [instance] finite
+PublicTheory.lean:248: attribute [instance] PoincareAction.one
+PublicTheory.lean:249: attribute [instance] PoincareAction.mul
+PublicTheory.lean:250: attribute [instance] PoincareAction.topology
+YM/AnalyticBridge/COUPLING_SHAPE_ESTIMATE/Pricing.lean:62: attribute [local instance] Gauge.frobInner
+YM/AnalyticBridge/GAUSSIAN_FIELD_ALIGNMENT/Operators.lean:33: attribute [local instance] Gauge.frobInner
+YM/AnalyticBridge/LOCAL_GAUSSIAN_LAWS/AffineRows.lean:43: attribute [local instance] Gauge.frobInner
+YM/AnalyticBridge/LOCAL_GAUSSIAN_MULTIPLIER/Noise.lean:20: attribute [local instance] Gauge.frobInner
+YM/AnalyticBridge/SELECTED_ORDERED_KERNELS/Rebased.lean:33: attribute [local instance] Gauge.frobInner in
+YM/AnalyticBridge/VERIFIED_RESET_STEP/Calculus.lean:20: attribute [local instance] Gauge.frobInner
+YM/AnalyticBridge/VERIFIED_RESET_STEP/Clover.lean:15: attribute [local instance] Gauge.frobInner
+YM/AnalyticBridge/VERIFIED_RESET_STEP/Quadratic.lean:12: attribute [local instance] Gauge.frobInner
+YM/AnalyticBridge/VERIFIED_RESET_STEP/Rows.lean:18: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Cupola.lean:21: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Ether.lean:75: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Hallmark.lean:18: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/LogLink.lean:91: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Tatami.lean:14: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/CUBIC_MATCH/Region/Compass.lean:20: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/CUBIC_MATCH/Region/GermCost.lean:26: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/CUBIC_MATCH/Region/Prediction.lean:17: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/CUBIC_MATCH/Terms/Slots.lean:26: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Estimate/Depot.lean:17: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Estimate/Junction.lean:30: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Estimate/Measure.lean:14: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Estimate/Office.lean:12: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Estimate/Payments.lean:16: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Estimate/Payroll.lean:16: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Estimate/Visit.lean:20: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Estimate/Volume.lean:10: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Estimate/Voyage.lean:18: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Local/Angles.lean:16: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Local/Direction.lean:21: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Local/Input.lean:15: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Local/Members.lean:20: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Local/Peak.lean:19: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Pre/Center.lean:20: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Pre/GaugeDir.lean:16: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Pre/Grounded.lean:19: attribute [local instance] Gauge.frobInner
+YM/AnalyticNext/QUARTIC_MATCH/Pre/Staged.lean:18: attribute [local instance] Gauge.frobInner
+YM/Branch/Center.lean:12: attribute [local instance] Gauge.frobInner
+YM/Branch/Synchronize.lean:24: attribute [local instance] Gauge.frobInner
+YM/Extra/WILSON_STARTUP/Curvature.lean:25: attribute [local instance] Gauge.frobInner
+YM/Extra/WILSON_STARTUP/Face.lean:10: attribute [local instance] Gauge.frobInner
+YM/Extra/WILSON_STARTUP/Residual.lean:16: attribute [local instance] Gauge.frobInner
+YM/FullVolume/E6/Garbs.lean:35: attribute [local instance] Gauge.frobInner
+YM/Gauge/Chart.lean:23: attribute [local instance] frobInner
+YM/Gauge/Colors.lean:37: attribute [local instance] frobInner
+YM/Gauge/Curvature.lean:13: attribute [local instance] frobInner
+YM/Gauge/Nearest.lean:23: attribute [local instance] frobInner
+YM/Gauge/Size.lean:26: attribute [local instance] frobInner
+YM/Ground/Spectrum.lean:79: attribute [instance] Panes.m Panes.b Panes.borel Panes.compact
+YM/Hilbert/Kolmogorov.lean:26: attribute [instance] Hilbert.normed Hilbert.ips Hilbert.complete
+YM/MergeProof/Switch.lean:28: attribute [local instance] Classical.propDecidable
+YM/MultipleContact/Fields.lean:26: attribute [local instance] YM.Work.A15.compact_ortho
+YM/MultipleContact/Matching/Twirls.lean:13: attribute [local instance] YM.Work.A15.compact_ortho
+YM/Next/BOUNDARY/Descends.lean:20: attribute [local instance] fieldOp_smul fieldOp_top
+YM/Next/BOUNDARY/Parallel.lean:21: attribute [local instance] fieldOp_smul fieldOp_top
+YM/Next/BOUNDARY/RotCurve.lean:79: attribute [local instance] fieldOp_smul fieldOp_top
+YM/Next/RANK/Flux/Chronicle.lean:39: attribute [instance] Vac.d Vac.r Vac.k
+YM/Next/STATIONARY/FrameEst/Center.lean:197: attribute [local instance] Gauge.frobInner
+YM/Next/STATIONARY/FrameEst/Center.lean:287: attribute [local instance] Gauge.frobInner
+YM/Next/STATIONARY/FrameEst/Stencils.lean:321: attribute [local instance] Gauge.frobInner
+YM/Next/STATIONARY/Joint/Chart.lean:407: attribute [local instance] Gauge.frobInner
+YM/Next/STATIONARY/Joint/Gauge.lean:318: attribute [local instance] Gauge.frobInner
+YM/Next/WARD_BIN/Energy.lean:44: attribute [local instance] Gauge.frobInner in
+YM/OPE/Eye/Fleeting.lean:52: attribute [instance] Spark.fin
+YM/OPE/Nesting/Remit.lean:11: attribute [local instance] Orbits.measO Orbits.borelO Orbits.hμ
+YM/OPE/Nesting/Sensors.lean:18: attribute [local instance] Orbits.measO Orbits.borelO Orbits.hμ
+YM/OPE/Orbits/Average.lean:11: attribute [local instance] measO borelO YM.Work.A15.compact_ortho
+YM/OPE/Orbits/Clearance.lean:9: attribute [local instance] measO borelO YM.Work.A15.compact_ortho
+YM/OPE/Orbits/Fee.lean:10: attribute [local instance] measO borelO hμ
+YM/OPE/Orbits/Port.lean:71: attribute [local instance] YM.Work.A15.compact_ortho
+YM/OPE/Orbits/Quotes.lean:11: attribute [local instance] measO
+YM/OPE/Orbits/Real.lean:13: attribute [local instance] measO
+YM/OPE/Orbits/Receipts.lean:11: attribute [local instance] measO borelO hμ
+YM/OPE/Orbits/Spin.lean:16: attribute [local instance] YM.Work.A15.compact_ortho
+YM/OPE/Orbits/Spin.lean:20: attribute [local instance] secO
+YM/PREC/Derivative.lean:13: attribute [local instance] Gauge.frobInner
+YM/PREC/Pred.lean:14: attribute [local instance] Gauge.frobInner
+YM/PertExtension/BareSlot.lean:15: attribute [local instance] Gauge.frobInner
+YM/PertExtension/HueMean.lean:12: attribute [local instance] Gauge.frobInner
+YM/PertExtension/HuePanel.lean:12: attribute [local instance] Gauge.frobInner
+YM/PertExtension/OrbHessian.lean:17: attribute [local instance] Gauge.frobInner
+YM/PertExtension/PaintTop.lean:12: attribute [local instance] Gauge.frobInner
+YM/PertExtension/TopCalibration.lean:58: attribute [-simp] degree_eq in
+YM/PertExtension/TopCalibration.lean:60: attribute [-simp] degree_eq
+YM/Phase/Mixture.lean:75: attribute [instance] metric sets borel compact
+YM/PhysicalNext/AFTERNOON_INTERACTING_RANK_COMPARISON/Spinto.lean:37: attribute [instance] Partone.hH Partone.hK
+YM/PhysicalNext/ALL_FIELD_PRERESET_ATLAS/Walls.lean:42: attribute [instance] Plate.enumerated Depot.enumerated Slip.enumerated
+YM/PhysicalNext/PHYSICAL_GUARD_7F546/Moment.lean:172: attribute [local instance] shift_probability
+YM/PhysicalNext/RG_NEXT_ALL_FIELD_EXPANSION_DERIVATIVES/Canopy.lean:21: attribute [local instance] forestFintype
+YM/PhysicalNext/RG_NEXT_ALL_FIELD_EXPANSION_DERIVATIVES/Garland.lean:30: attribute [local instance] forestFintype
+YM/PhysicalNext/RG_NEXT_ALL_FIELD_EXPANSION_DERIVATIVES/Wood.lean:26: attribute [local instance] forestFintype
+YM/PhysicalNext/RG_NEXT_COMPLETE_REPEATABLE_NONLINEAR_STEP/Sward/Greenbelt.lean:31: attribute [local instance] stepFinite
+YM/PhysicalNext/V9_JOINT_ENDPOINT_LOAD/Heir/Script.lean:44: attribute [instance] Script.basis Script.fin Script.dec
+YM/PhysicalNext/V9_JOINT_ENDPOINT_LOAD/Psalm/Line.lean:59: attribute [instance] Line.unit
+YM/Planned/ATOM_FORCED_ESTIMATE/Held.lean:75: attribute [instance] Held.meas
+YM/Planned/ATOM_REGULAR_ESTIMATE/Sampled.lean:62: attribute [instance] space
+YM/Pressure/Single.lean:15: attribute [local instance] Gauge.frobInner
+YM/ProjectorNext/EQUATION_CAMPAIGN/Gradient.lean:23: attribute [local instance] Gauge.frobInner
+YM/ProjectorNext/PROJECTOR_CALIBRATION/Gradient.lean:27: attribute [local instance] Gauge.frobInner
+YM/ProofPorts/COMMON_COMPLEX_PRODUCTION/Bath.lean:46: attribute [instance] Bath.many Bath.inspect Bath.ms Bath.one
+YM/Push/CORRECTED_COLUMNS/Haar.lean:72: attribute [local instance] Gauge.frobInner
+YM/Push/LOOP_COEFFICIENT/Guard/Velocity.lean:12: attribute [local instance] Gauge.frobInner
+YM/Push/LOOP_COEFFICIENT/Paths/Reader.lean:22: attribute [instance] Reader.range
+YM/Push/RELAY_MARK/Wilson.lean:25: attribute [local instance] Gauge.frobInner
+YM/Push/STRESS_FLUX/Force.lean:17: attribute [local instance] Gauge.frobInner
+YM/RG08/Tack/Bowl.lean:12: attribute [local instance] Gauge.frobInner
+YM/RG08/Tack/Stamp.lean:12: attribute [local instance] Gauge.frobInner
+YM/RG12/Shadows/Shop.lean:73: attribute [instance] Barque.inst Barque.cara
+YM/RemainderComparison/Funk/Prelude.lean:49: attribute [instance] Pier.alphabet
+YM/RemainderComparison/Gear/Quill.lean:20: attribute [local instance] Gauge.frobInner
+YM/SectorTools/PHYSICAL_GAUSSIAN_SWITCH/Marginal.lean:29: attribute [local instance] shift_probability
+YM/SectorTools/PHYSICAL_GAUSSIAN_SWITCH/Potential.lean:22: attribute [local instance] shift_probability
+YM/SectorTools/PHYSICAL_GAUSSIAN_SWITCH/Shift.lean:25: attribute [local instance] shift_probability
+YM/Spectral/Projection.lean:32: attribute [instance] finite
+YM/TraceExtension/Atlas/Aligned.lean:14: attribute [local instance] Work.A15.compact_ortho
+YM/TraceExtension/Atlas/Moons.lean:30: attribute [local instance] Work.A15.compact_ortho
+YM/TraceExtension/Atlas/Purse.lean:35: attribute [local instance] Work.A15.compact_ortho
+YM/TraceExtension/Wicket/Shade.lean:9: attribute [local instance] Gauge.frobInner
+YM/UVExtension/Concert/Lyres.lean:24: attribute [reducible] ticketR
+YM/UVExtension/Concert/Stethoscope.lean:52: attribute [instance] Handle.group Handle.space Handle.small
+YM/UVExtension/Copse/Berry.lean:60: attribute [local instance] Classical.propDecidable
+YM/UVExtension/Copse/Cover.lean:73: attribute [local instance] Classical.propDecidable
+YM/UVExtension/Pier/Syrup.lean:25: attribute [local instance] Classical.propDecidable
+YM/UVExtension/Span/Overseas.lean:41: attribute [local instance] Gauge.frobInner
+YM/UVExtension/Span/Vials.lean:44: attribute [local instance] Gauge.frobInner
+YM/UVNext/PRICED_KERNELS/Costed.lean:27: attribute [local instance] Gauge.frobInner
+YM/UVNext/PRICED_KERNELS/MaskE.lean:39: attribute [local instance] Gauge.frobInner
+YM/UVNext/PRICED_KERNELS/MatrixTip.lean:27: attribute [local instance] Gauge.frobInner
+YM/UVNext/PRICED_KERNELS/Peak.lean:32: attribute [local instance] Gauge.frobInner
+YM/UVNext/PRICED_KERNELS/Shield.lean:25: attribute [local instance] Gauge.frobInner
+YM/WilsonBulk/Broadcast/GalleryRain.lean:30: attribute [local instance] Gauge.frobInner
+YM/WilsonBulk/Broadcast/Rainy.lean:13: attribute [local instance] Gauge.frobInner
+YM/WilsonBulk/Build/Noisy.lean:19: attribute [local instance] Gauge.frobInner
+YM/WilsonBulk/Staves/Generator.lean:20: attribute [local instance] Gauge.frobInner
+YM/WilsonBulk/Staves/Muster.lean:28: attribute [local instance] Gauge.frobInner
+YM/WilsonBulk/Tuning/Upstream.lean:22: attribute [local instance] Gauge.frobInner
+YM/Work/A15.lean:66: attribute [local instance] compact_ortho
+YM/Work/C07/Continue.lean:22: attribute [local instance] Measure.Subtype.measureSpace in
+YM/Work/C08.lean:98: attribute [local instance] Measure.Subtype.measureSpace
+YM/Work/C25.lean:85: attribute [local instance] Measure.Subtype.measureSpace in
+YM/Work/E05.lean:24: attribute [local instance] Gauge.frobInner
+YM/Work/F03/Flat.lean:18: attribute [local instance] Gauge.frobInner

@@ -1,0 +1,7 @@
+Verify.lean:85: run_cmd do
+VerifyJoint.lean:103: run_cmd do
+verification/CompactCheck.lean:97: run_cmd do
+verification/Comparator.lean:27: run_cmd do
+verification/Comparator.lean:35: run_cmd Lean.logInfo "COMPARATOR_PASS"
+verification/Inventory.lean:5: run_cmd do
+verification/Usage.lean:17: run_cmd do

@@ -1,0 +1,4 @@
+YM/Further/ROOTED_INTERACTING_REMAINDER/Station.lean:57: admit (D : Allocation G S x W)
+YM/RG08/Mason/Faith.lean:13: admit : P x m
+YM/RG08/Yamen/Date.lean:18: admit: E ≤ a.clock.J low
+YM/RemainderComparison/Seedlings/Tuft.lean:57: admit : ∀ i∈hub X y H b E x₁ r n, I.supportP (K.f i)=(H.supportP i).image K.halo

@@ -1,0 +1,267 @@
+Verify.lean:17: def replayProofs (roots : Array Name) : CommandElabM Unit := do
+Verify.lean:54: let mut replay := project
+Verify.lean:67: replay.contains fresh then throwError "Duplicate audit name already exists: {fresh}"
+Verify.lean:68: replay := replay.insert fresh (.thmInfo {localProof with name := fresh, all := [fresh]})
+Verify.lean:68: replay := replay.insert fresh (.thmInfo {localProof with name := fresh, all := [fresh]})
+Verify.lean:75: let checked ← liftIO <| base.replay replay
+Verify.lean:75: let checked ← liftIO <| base.replay replay
+Verify.lean:78: let some (.thmInfo submitted) := replay[n]? | throwError "Missing submitted proof for {n}"
+Verify.lean:89: IndependentAudit.replayProofs roots.toArray
+VerifyJoint.lean:19: def replayProofs (roots : Array Name) : CommandElabM Unit := do
+VerifyJoint.lean:72: let mut replay := project
+VerifyJoint.lean:85: replay.contains fresh then throwError "Duplicate audit name already exists: {fresh}"
+VerifyJoint.lean:86: replay := replay.insert fresh (.thmInfo {localProof with name := fresh, all := [fresh]})
+VerifyJoint.lean:86: replay := replay.insert fresh (.thmInfo {localProof with name := fresh, all := [fresh]})
+VerifyJoint.lean:93: let checked ← liftIO <| base.replay replay
+VerifyJoint.lean:93: let checked ← liftIO <| base.replay replay
+VerifyJoint.lean:96: let some (.thmInfo submitted) := replay[n]? | throwError "Missing submitted proof for {n}"
+VerifyJoint.lean:107: IndependentAudit.replayProofs roots.toArray
+YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Ground.lean:145: lemma Margins.ground {I J ρ : Type} [Fintype I] [Fintype J] [Fintype ρ] {h : Kernel G c I J ρ} {η K : ℝ} (he : Margins h V η K) (hη : 0<η) : Kernel.Ground h V η⁻¹ :=
+YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Intake.lean:47: let μ' := ‖Kernel.tint G‖*E; let H := (K + E*YM.SectorNext.Remainder.Scales.p G S.patch.L x) + g⁻¹*(2*d+μ'*t)
+YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Intake.lean:87: let u := ‖Kernel.tint G‖*E; let H := (K+E*YM.SectorNext.Remainder.Scales.p G S.patch.L x) + g⁻¹*(2*d+u*t)+B
+YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Intake.lean:96: let H := (K+E*YM.SectorNext.Remainder.Scales.p G S.patch.L x) + (coupling R.beta)⁻¹*(2*d+‖Kernel.tint G‖*E*R.p.threshold)+B
+YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Intake.lean:108: unfold parentBound fieldCost pivotCost kinematic door_growth Kernel.aperture compositionCost
+YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Intake.lean:119: let u := ‖Kernel.tint G‖*E; let H := (K + E*YM.SectorNext.Remainder.Scales.p G S.patch.L x) + g⁻¹*(2*d+u*t)+B
+YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Intake.lean:147: let U := stageCost G R.p.threshold (coupling R.beta) (‖Kernel.tint G‖ * E+μ) ((K+ E*YM.SectorNext.Remainder.Scales.p G S.patch.L x)+(coupling R.beta)⁻¹ * (2*d+‖tint G‖*E*R.p.threshold)+B)
+YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Intake.lean:149: apply le_add_of_nonneg_left; unfold door_growth Kernel.aperture compositionCost; have h := hC.fields.size; have := B₀.guard.pos; have hU : 0≤U := h; have := R.p.threshold_pos; have := B₀.guard.paid; p
+YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Qualify.lean:140: refine Kernel.Authored.collect auth (Finset.filter_subset ..) (fun i hi => ?_) hk
+YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Qualify.lean:152: ‖leftDerivs (Kernel.choice R X i) (List.replicate j z) (h.atLinks S L.location (coupling R.beta) V) - leftDerivs (Kernel.choice R X' i) (List.replicate j z) (h'.atLinks S L'.location (coupling R.beta)
+YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Qualify.lean:152: ‖leftDerivs (Kernel.choice R X i) (List.replicate j z) (h.atLinks S L.location (coupling R.beta) V) - leftDerivs (Kernel.choice R X' i) (List.replicate j z) (h'.atLinks S L'.location (coupling R.beta)
+YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Sector.lean:84: rw [Kernel.stage,he.mean,he.draw]; rfl
+YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Sector.lean:141: rw [Kernel.chartLog,Real.exp_sum]; simp_rw [he.charts]; exact hx.symm
+YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Sector.lean:181: unfold Kernel.expense; rw [he.regular hR hs]; unfold E cost; abel
+YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Sector.lean:185: (Real.exp (cost+h.chartLog q Z d (coupling R.beta) V+E -P)*Real.exp P) := by unfold Kernel.multiplier P; ring
+YM/AnalyticBridge/SECTOR_MARKED_IDENTITY/Bands.lean:50: unfold Bands.ray; rw [Push.Local.Kernel.mask_gauge _ _ (ha.regular j).symmetry k y]
+YM/AnalyticBridge/SECTOR_MARKED_IDENTITY/Bands.lean:56: simp only [Push.Local.Kernel.exp_invariant h k y, Bands.extra, hr, Bands.cluster, hc]
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Ambit.lean:36: refine (( (hh.plusminus (hs.plusminus hv)).scalar g⁻¹).replay M.toContinuousLinearMap).congr (Eventually.of_forall fun i a=>?_)
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Ambit.lean:55: have hK: Zest K x j := (((hx.plusminus (H.settles (Y:=Y) hq)).scalar (gStep R.beta)⁻¹).replay L.toContinuousLinearMap)
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Fairum.lean:72: have he (i:Bond f) : Zest (fun t y=> u t y i) x j := p.replay (ContinuousLinearMap.proj i)
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Fairum.lean:105: · exact (pu.replay (ContinuousLinearMap.proj i)).wand (tip (X:=X) _)
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Fairum.lean:107: have hw (p:Tubular f G): Zest (fun t y=> WithLp.ofLp (w t y) p) x j := pw.replay (EuclideanSpace.proj p)
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Fairum.lean:119: ((hf i.1).replay (EuclideanSpace.proj (𝕜:=ℝ) (ι:=G.ColorIndex) i.2)))
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Fairum.lean:139: have hx b i : Zest (fun t y=> X.cone b (u t y) i) x j := (hU.replay (ContinuousLinearMap.proj _)).wand (tip (X:=X) _)
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Fairum.lean:163: · exact (hU.replay (ContinuousLinearMap.proj _)).wand (elevator (X:=X) hΛ ha ht)
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Incident.lean:34: · exact DataKernel.plots _ _ hv ..
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Outer.lean:40: rw [DataKernel.ng hR.accepted,G.norm_adjoint] at hs
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Pinene.lean:40: exact (H.weather.via Y).together (hp.replay D.toContinuousLinearMap)
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Pinene.lean:68: ((hp t.1).replay (EuclideanSpace.proj (𝕜:=ℝ) (ι:=G.ColorIndex) t.2)))
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Pinene.lean:71: exact (Zest.folds (f:=fun a t=> well (g a t)) hS).replay P'.toContinuousLinearMap
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Rainbows.lean:25: simp only [crown, Pressure.trunk, DataKernel.kept U z, DataKernel.short_gauge U z h,G.norm_adjoint,
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Rainbows.lean:25: simp only [crown, Pressure.trunk, DataKernel.kept U z, DataKernel.short_gauge U z h,G.norm_adjoint,
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Rainbows.lean:45: have hf := DataKernel.mvg p R u z V (i,j)
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Rainbows.lean:54: unfold Tube.workI monetary; rw [hx, DataKernel.mwg p R u z V i,
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Rainbows.lean:58: have hx i : T.vision R u Q i= G.adjoint (z i.1.1) (T.vision R u V i) := DataKernel.thins V z ha ..
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Rainbows.lean:68: refine sum_congr rfl fun j _=> ?_; rw [hx,show T.Xn R Q (i,j)= _ from DataKernel.plots V z ha R _ _, duet,G.norm_adjoint]; rfl
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Rainbows.lean:73: have hv : T.workN R Q u i=T.workN R V u i := by unfold Tube.workN; unfold Q; rw [DataKernel.ng p,G.norm_adjoint]
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Symplex.lean:50: simp only [pairValue,Work.F05.pull_gauge_zero, pairTail,DataKernel.kept, PathData.ellTerms,Work.F05.slot_gauge,
+YM/AnalyticNext/CONNECTED_ACTIVITY_JETS_E6/Zest.lean:53: lemma replay (L : F→L[ℝ] Y) : Zest (fun a y=> L (f a y)) x k := by
+YM/Dash/Twist.lean:10: import YM.TimeKernel.Trace
+YM/EveryPhase/Irreducible.lean:177: | single i c => simp only [Kernel.Gram.stems,Finsupp.linearCombination_single,inner_smul_left]; exact congrArg _ (hh i)
+YM/EveryPhase/Irreducible.lean:179: apply Kernel.Gram.by_bud hp.soil; intro b
+YM/EveryPhase/Irreducible.lean:189: simp only [Kernel.Gram.stems,Finsupp.linearCombination_single,inner_smul_left, _root_.smul_apply,inner_smul_right]
+YM/EveryPhase/Surjective.lean:145: | single i c => simp only [Kernel.Gram.stems,Finsupp.linearCombination_single,inner_smul_left,
+YM/EveryPhase/Vacuum.lean:122: apply Kernel.Gram.by_bud (L.cores i).soil
+YM/Extraction/Gaps.lean:5: import YM.TimeKernel.Trace
+YM/Extraction/Inherited.lean:4: import YM.TimeKernel.Trace
+YM/Fields/Lo.lean:90: let Z := Classical.choice (Kernel.host F.safe)
+YM/Fields/Motion.lean:61: | single i b => simp_rw [Kernel.Gram.stems,Finsupp.linearCombination_single,map_smul]; exact continuous_const.smul (hp i)
+YM/Fields/Stems.lean:20: abbrev Soil (W : Surface S) (J : StarOp S) := Kernel.Gram (W.kernel J)
+YM/Fields/Stems.lean:70: rw [he,he]; simp [Kernel.Gram.stems,inner_smul_left,inner_smul_right,Z.measure,folds]
+YM/Fields/System.lean:73: apply NNKernel.criterion
+YM/FullVolume/Arc.lean:61: replay : ℝ → Trail a p
+YM/FullVolume/Arc.lean:63: trials : ∀ x∈Icc left right, Competes R p N m (replay x)
+YM/FullVolume/Arc.lean:64: top : ∀ x∈Icc left right,(replay x N).beta=x
+YM/FullVolume/Arc.lean:65: priced i : m ≤ i → i ≤ N → Curve (a.budget i) (fun x => replay x i) (Icc left right)
+YM/FullVolume/Arc.lean:66: lower : (replay left m).beta=low a m
+YM/FullVolume/Arc.lean:67: upper : (replay right m).beta=high a m
+YM/FullVolume/Arc.lean:71: lemma covers {p N} (Y : Arc R p N 0) : nearby a ⊆ (fun x => (Y.replay x 0).beta) '' Icc Y.left Y.right := by
+YM/FullVolume/Arc.lean:109: (fun x=> W.replay x (k+1)) (W.priced _ le_rfl hk) (fun x hx=> (W.trials x hx).prices _ le_rfl hk)
+YM/FullVolume/Arc.lean:113: let F:= fun x : ℝ=> update (W.replay x) k (T x)
+YM/FullVolume/Arc.lean:115: have hy (x i) (hi : k < i): F x i=W.replay x i:= update_of_ne (Nat.ne_of_gt hi) ..
+YM/FullVolume/Artes/Events.lean:57: lemma replayQ {W': Horizon a}{Z:Kin W' O}(h:Cadre Q U)(hp:∀ i,(fun n=> U.path n i)=ᶠ[atTop] fun n=>Z.path n i)(he:∀ i,(fun n=> U.alpha n i)=ᶠ[atTop] fun n=>Z.alpha n i)(ht:∀ i j F,(fun n=> U.stationar
+YM/FullVolume/Artes/Gears.lean:39: exact (Tale.replay h he hw a hO u h1 h2 h3 h4 hx.1 hp.1 hx.2 hp.2 hz).2
+YM/FullVolume/Artes/Letters.lean:94: · obtain ⟨x⟩:=h.nonterm; have he:=Tale.replay (hv.line i|>.honored) (hv.line i|>.honored) (hm.line i|>.honored) x h.helps 0 rfl (by rw [hP]) rfl (by rw [hY]) rfl (h₂ _) rfl (h₃ _) (by rw [hG]; simp)
+YM/FullVolume/Artes/Sconce.lean:54: lemma replay (x:G.ColorIndex)(hO:LocalRatio O)(u:ℝ)(h:F.input.row=H.input.row)(he:F.input.row=W.input.row)(hr:F.receipts.row=H.receipts.row)(ht:F.receipts.row=W.receipts.row)(hx:F.stock.b=H.stock.b)(h
+YM/FullVolume/Cross.lean:86: Competes (still R.kit) p N 0 (U.replay β) ∧ (U.replay β 0).beta=b ∧ (U.replay β N).beta=β) ∧
+YM/FullVolume/Cross.lean:86: Competes (still R.kit) p N 0 (U.replay β) ∧ (U.replay β 0).beta=b ∧ (U.replay β N).beta=β) ∧
+YM/FullVolume/Cross.lean:86: Competes (still R.kit) p N 0 (U.replay β) ∧ (U.replay β 0).beta=b ∧ (U.replay β N).beta=β) ∧
+YM/FullVolume/Cross.lean:87: (∀ N p:ℕ, let U:=R.tuning.arc p N; R.family.path.rep N p=U.replay (R.tuning.beta p N)) ∧
+YM/FullVolume/Gain/Resolve.lean:69: exact ⟨⟨C.replay x,C.trials x hx,(show (C.replay x 0).beta=b from h).symm ▸ hb⟩,h⟩
+YM/FullVolume/Gain/Resolve.lean:69: exact ⟨⟨C.replay x,C.trials x hx,(show (C.replay x 0).beta=b from h).symm ▸ hb⟩,h⟩
+YM/FullVolume/Rods.lean:57: central p N : (arc p N).replay (beta p N)=T.history N p
+YM/FullVolume/Rods.lean:64: choose k hx hz using fun p N=> show ∃ z∈ Icc (E p N).left (E p N).right, ((E p N).replay z 0).beta=B.a.clock.bar from hv p N
+YM/FullVolume/Rods.lean:65: let Y N p:= (E p N).replay (k p N)
+YM/FullVolume/Roll/Fiscal.lean:161: J,j,⟨H',Hj,hΓ, M,H,U, h₃,h₄,h₅,h₆,h₇,h₈,hU,hp,hp',ha,ha',haX⟩,Stationary.Artes.replayQ hcΞ ?_ ?_ ?_,Stationary.Artes.history_copy hs₀ ?_ ?_⟩
+YM/FullVolume/Shroud/Homer.lean:51: intro t U; rw [← hm,← hm,Push.Local.Kernel.exp_invariant hp,Push.Local.Kernel.exp_invariant hv]
+YM/FullVolume/Shroud/Homer.lean:51: intro t U; rw [← hm,← hm,Push.Local.Kernel.exp_invariant hp,Push.Local.Kernel.exp_invariant hv]
+YM/FullVolume/Shroud/Laws.lean:18: def replayK (n:Side): ℕ ↪ ℕ:=Embedding.inl.trans (guardK (n:=n)).symm.toEmbedding
+YM/FullVolume/Shroud/Laws.lean:20: local notation "Lb"=> replayK n
+YM/FullVolume/Shroud/Laws.lean:23: let T:=stitch R t; have he(i): T.forced (replayK n i)=R.activities.forced i:=ks R t (.inl i); have hv(i): T.K (replayK n i)=(A).K i:=ks' R t (.inl i)
+YM/FullVolume/Shroud/Laws.lean:23: let T:=stitch R t; have he(i): T.forced (replayK n i)=R.activities.forced i:=ks R t (.inl i); have hv(i): T.K (replayK n i)=(A).K i:=ks' R t (.inl i)
+YM/FullVolume/Shroud/Parks.lean:43: rw [replay D c hd hp hw h,← tsum_mul_left]; apply tsum_congr; intro i; rw [masked_eq _ _ _ _ (by rw [Healthy,h]; exact Finset.disjoint_empty_right _)]; unfold grain; simp only [Pi.smul_apply, smul_eq_
+YM/FullVolume/Shroud/Seeds.lean:62: lemma replay {U:Config G n}(he: flags p.threshold U=∅) : kinetic D c p U= ∑' i:Seat n×Worm, VerifiedReset.factor * (read D c i.2 (0:Site n)) (Seat.view i.1 U):=by
+YM/FullVolume/Shroud/Seeds.lean:79: #print axioms YM.FullVolume.Shroud.Quake.replay
+YM/FullVolume/Stage/Rods.lean:31: choose k hx hz using fun p N=> show ∃ z∈ Icc (E p N).left (E p N).right, ((E p N).replay z 0).beta=B.a.clock.bar from hv p N
+YM/FullVolume/Stage/Rods.lean:32: let Y N p:= (E p N).replay (k p N)
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Orbit.lean:41: (P.threshold • (invert s) (B.replay Y)) := by
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Orbit.lean:48: replay := invert s ∘ (B.replay ∘ retract B s)
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Orbit.lean:48: replay := invert s ∘ (B.replay ∘ retract B s)
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Orbit.lean:52: have he : ContDiffAt ℝ t B.replay (A 0) := by rw [map_zero]; exact B.nice
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Replay.lean:28: replay : Panel G size → Directions G n
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Replay.lean:29: empty : replay 0 = 0
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Replay.lean:30: nice : ContDiffAt ℝ t replay 0
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Replay.lean:35: Agrees cube (gauge u U) (increment 1 (P.threshold • replay (P.threshold⁻¹ • fun i => (leg i).atSite U 0)))
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Replay.lean:49: def showAt (Y : B.Eye) : Config G n := increment 1 (P.threshold • B.replay Y)
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Replay.lean:58: change ContDiffAt ℝ l (Costs.scaledFun P f ∘ B.replay) 0
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Replay.lean:64: def rate : ℝ := 1+ ∑ l ∈ Finset.range (t+1), ‖iteratedFDeriv ℝ l B.replay 0‖
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Replay.lean:77: have hu i (hp : 1 ≤ i) (hi : i ≤ l) : ‖iteratedFDeriv ℝ i B.replay 0‖ ≤ B.rate^i := by
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Replay.lean:78: have he := Finset.single_le_sum (s:=Finset.range (t+1)) (f:=fun j => ‖iteratedFDeriv ℝ j B.replay 0‖)
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Replay.lean:84: change ‖Tensor.coeff (Costs.scaledFun P f ∘ B.replay) l 0‖ ≤ _
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Statue.lean:37: (wall m:ℝ)^2 ≤ R → Allows l (see G l h P).replay 0 (b.rents R) := by
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Statue.lean:59: Allows l (Compass.arrow B s ht).replay 0 (b.rents R) := by
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Statue.lean:65: change Allows l ((Compass.invert s : Directions G n →L[ℝ] Directions G n) ∘ (B.replay ∘ Compass.retract B s)) (0:B.Eye) _
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Statue.lean:66: refine Allows.linear (Compass.invert s) (f:=B.replay ∘ Compass.retract B s) ?_ (invest s)
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Statue.lean:67: refine Allows.mono (Allows.comp (g:=B.replay) (f:=Compass.retract B s) ?_ ?_) (hb R u)
+YM/Further/CORRECTED_LIFT_COEFFICIENTS/Stone.lean:128: replay X := P.threshold⁻¹ • tally G h (P.threshold • X)
+YM/Ground/Compress.lean:160: simp only [Kernel.Gram.stems,Finsupp.linearCombination_single,
+YM/Ground/Lean.lean:183: | single i c => simp only [Kernel.Gram.stems,Finsupp.linearCombination_single,inner_smul_left,hxq]
+YM/Ground/Permute.lean:118: simp only [Kernel.Gram.stems,Finsupp.linearCombination_single,map_smul]
+YM/Ground/Permute.lean:127: simp only [Kernel.Gram.stems,Finsupp.linearCombination_single, map_smul,inner_smul_left]
+YM/Next/BOUNDARY/Core.lean:108: refine ⟨U, ⟨hu, fun p => Kernel.Gram.by_bud H.soil ?_, (hU _).trans Z.vacuum⟩, ?_⟩
+YM/Next/BOUNDARY/Core.lean:183: refine ⟨U, ⟨hU, ⟨A, B, w⟩, fun n v => ?_⟩, fun L k => Kernel.Gram.by_bud H.soil
+YM/Next/BOUNDARY/Derivative.lean:299: refine (Kernel.Gram.whole H.soil).eq_of_inner_right ℂ fun f => ?_
+YM/Next/BOUNDARY/Derivative.lean:304: simp only [Kernel.Gram.stems, Finsupp.linearCombination_single, inner_smul_left]
+YM/Next/BOUNDARY/Stage.lean:178: let Z := Classical.choice (Kernel.host G.safe)
+YM/Next/RANK/Beam.lean:41: def replay (T : Table C.book) {d} {X : Columns C S d} (Y : X.Trials) : Columns.Trials (reindex T X) :=
+YM/Next/RANK/Beam.lean:46: lemma reviewed {d} {X : Columns C S d} {Y : X.Trials} (h : Purchases Y) (T) : Purchases (replay T Y) :=
+YM/Next/RANK/Beam.lean:59: (replay T Y).Valid f := by
+YM/Next/RANK/Beam.lean:64: refine ⟨hv, ?_, (reviewed hx T).to_rank (show lands (replay T Y) f from hy) ?_⟩
+YM/Next/RANK/Beam.lean:164: (replay T (Z d)).Valid f' := by
+YM/Next/RANK/Beam.lean:180: ⟨reindex T (X d),replay T _,(ha d).2.2⟩⟩,ha⟩
+YM/Nonperturbative/HeadlineSpec.lean:130: ∀ᶠ r:ℝ in 𝓝[>]0,∀ (s:(fork n f).Inner→ℝ)(z:(fork n f|>.Plot)), Accept r M η s z → orbitMargin R.port m (Tree.profile z) (anchor z) ∧ z∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R z v c‖ ≤ 
+YM/Nonperturbative/HeadlineSpec.lean:130: ∀ᶠ r:ℝ in 𝓝[>]0,∀ (s:(fork n f).Inner→ℝ)(z:(fork n f|>.Plot)), Accept r M η s z → orbitMargin R.port m (Tree.profile z) (anchor z) ∧ z∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R z v c‖ ≤ 
+YM/Nonperturbative/HeadlineSpec.lean:130: ∀ᶠ r:ℝ in 𝓝[>]0,∀ (s:(fork n f).Inner→ℝ)(z:(fork n f|>.Plot)), Accept r M η s z → orbitMargin R.port m (Tree.profile z) (anchor z) ∧ z∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R z v c‖ ≤ 
+YM/Nonperturbative/HeadlineSpec.lean:130: ∀ᶠ r:ℝ in 𝓝[>]0,∀ (s:(fork n f).Inner→ℝ)(z:(fork n f|>.Plot)), Accept r M η s z → orbitMargin R.port m (Tree.profile z) (anchor z) ∧ z∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R z v c‖ ≤ 
+YM/Nonperturbative/HeadlineSpec.lean:133: Kernel.cardPanel z y ∈ Orbits.guardZone U R m ∧ ‖Kernel.normData U R z v m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s ∧ ∀ q:Viewers U, ‖Kernel.pipe U R z v q m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s
+YM/Nonperturbative/HeadlineSpec.lean:133: Kernel.cardPanel z y ∈ Orbits.guardZone U R m ∧ ‖Kernel.normData U R z v m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s ∧ ∀ q:Viewers U, ‖Kernel.pipe U R z v q m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s
+YM/Nonperturbative/HeadlineSpec.lean:133: Kernel.cardPanel z y ∈ Orbits.guardZone U R m ∧ ‖Kernel.normData U R z v m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s ∧ ∀ q:Viewers U, ‖Kernel.pipe U R z v q m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s
+YM/OPE/Nesting/Endpoint.lean:19: ∀ᶠ r:ℝ in 𝓝[>]0,∀ (s:(fork n f).Inner→ℝ)(z:(fork n f|>.Plot)), Accept r M η s z → orbitMargin R.port m (Tree.profile z) (anchor z) ∧ z∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R z v c‖ ≤ 
+YM/OPE/Nesting/Endpoint.lean:19: ∀ᶠ r:ℝ in 𝓝[>]0,∀ (s:(fork n f).Inner→ℝ)(z:(fork n f|>.Plot)), Accept r M η s z → orbitMargin R.port m (Tree.profile z) (anchor z) ∧ z∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R z v c‖ ≤ 
+YM/OPE/Nesting/Endpoint.lean:19: ∀ᶠ r:ℝ in 𝓝[>]0,∀ (s:(fork n f).Inner→ℝ)(z:(fork n f|>.Plot)), Accept r M η s z → orbitMargin R.port m (Tree.profile z) (anchor z) ∧ z∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R z v c‖ ≤ 
+YM/OPE/Nesting/Endpoint.lean:19: ∀ᶠ r:ℝ in 𝓝[>]0,∀ (s:(fork n f).Inner→ℝ)(z:(fork n f|>.Plot)), Accept r M η s z → orbitMargin R.port m (Tree.profile z) (anchor z) ∧ z∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R z v c‖ ≤ 
+YM/OPE/Nesting/Endpoint.lean:22: Kernel.cardPanel z y ∈ Orbits.guardZone U R m ∧ ‖Kernel.normData U R z v m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s ∧ ∀ q:Viewers U, ‖Kernel.pipe U R z v q m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s
+YM/OPE/Nesting/Endpoint.lean:22: Kernel.cardPanel z y ∈ Orbits.guardZone U R m ∧ ‖Kernel.normData U R z v m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s ∧ ∀ q:Viewers U, ‖Kernel.pipe U R z v q m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s
+YM/OPE/Nesting/Endpoint.lean:22: Kernel.cardPanel z y ∈ Orbits.guardZone U R m ∧ ‖Kernel.normData U R z v m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s ∧ ∀ q:Viewers U, ‖Kernel.pipe U R z v q m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s
+YM/OPE/Nesting/Integration.lean:68: base: Integrable (fun i=> f i * Kernel.output U R (z i) v c) μ
+YM/OPE/Nesting/Integration.lean:69: compounded:Integrable (fun i=> f i * Kernel.chord U R (z i) v c D) μ
+YM/OPE/Nesting/Integration.lean:70: ask: ‖∫ i,f i*Kernel.output U R (z i) v c ∂μ‖ ≤ B*toll (wages v) ε m s
+YM/OPE/Nesting/Integration.lean:71: dual: ‖(∫ i,f i*Kernel.output U R (z i) v c ∂μ)-(∫ i,f i*Kernel.chord U R (z i) v c D ∂μ)‖ ≤ B * bothToll (wages v) ε m D s
+YM/OPE/Nesting/Integration.lean:71: dual: ‖(∫ i,f i*Kernel.output U R (z i) v c ∂μ)-(∫ i,f i*Kernel.chord U R (z i) v c D ∂μ)‖ ≤ B * bothToll (wages v) ε m D s
+YM/OPE/Nesting/Integration.lean:76: let t:=fork n p; let g₁(x:Tree.Plot t):=Kernel.output U R x v c; let g₂(x:Tree.Plot t):=Kernel.chord U R x v c D; let g₀(x:Tree.Plot t):=g₁ x-g₂ x
+YM/OPE/Nesting/Integration.lean:76: let t:=fork n p; let g₁(x:Tree.Plot t):=Kernel.output U R x v c; let g₂(x:Tree.Plot t):=Kernel.chord U R x v c D; let g₀(x:Tree.Plot t):=g₁ x-g₂ x
+YM/OPE/Nesting/Integration.lean:77: let V:=(Kernel.aperture U R t m D) ∩ {z| orbitMargin R.port m (Tree.profile z) (z|>anchor)}
+YM/OPE/Nesting/Integration.lean:78: have he:IsOpen V:= Kernel.stencil U R .. |>.inter (Kernel.collar_open U R m)
+YM/OPE/Nesting/Integration.lean:78: have he:IsOpen V:= Kernel.stencil U R .. |>.inter (Kernel.collar_open U R m)
+YM/OPE/Nesting/Integration.lean:79: have hc:ContinuousOn g₁ V:= fun x hx=>(Kernel.output_smooth U R v c hx.2).continuousAt.continuousWithinAt
+YM/OPE/Nesting/Integration.lean:80: have h':ContinuousOn g₂ V:= fun x hx=>(Kernel.chord_smooth U R v c D hx.1).continuousAt.continuousWithinAt
+YM/OPE/Nesting/Motions.lean:82: lemma chord_vector (m:ℕ): ∑ q:R.channels m,(Kernel.chord U R z (Nesting.chars v) q D) • R.actor m q=R.fresh m (Tree.skyline z) (anchor z) (emitted U R z v D):=by
+YM/OPE/Nesting/Motions.lean:84: unfold Kernel.chord Composite.stacked; let v':=Nesting.chars v
+YM/OPE/Nesting/Motions.lean:134: local notation "join" a h => (∑ c:R.channels m,Kernel.chord U R a (Nesting.chars h) c D • R.actor m c)
+YM/OPE/Nesting/Motions.lean:135: def stackVector := ∑ c:R.channels m,Kernel.chord U R z (Nesting.chars v) c D • R.actor m c
+YM/OPE/Nesting/Profiles.lean:43: def TestedProfile (t:Tree)(z:Tree.Envelope K t)(y:K→J→E4): K→ Loc t.Leaf J:= fun i=>Kernel.cardPanel (z i) (y i)
+YM/OPE/Nesting/Profiles.lean:53: have hp:AEMeasurable p μ:= ((Kernel.plot_smooth (J:=J) (t:=t)).continuous.measurable).comp_aemeasurable (hz.prodMk hy)
+YM/OPE/Nesting/Profiles.lean:67: lemma phase_mixtures : ∀ᶠ r:ℝ in 𝓝[>]0,∀ (s:(fork n f).Inner→ℝ)(z:Tree.Plot (fork n f)) (y:J→E4),Accept r M η s z → Buffer z y δ→∀ (μ:Measure U.α.space.X), IsProbabilityMeasure μ → ‖ phaseMoment U (vo
+YM/OPE/Nesting/Profiles.lean:67: lemma phase_mixtures : ∀ᶠ r:ℝ in 𝓝[>]0,∀ (s:(fork n f).Inner→ℝ)(z:Tree.Plot (fork n f)) (y:J→E4),Accept r M η s z → Buffer z y δ→∀ (μ:Measure U.α.space.X), IsProbabilityMeasure μ → ‖ phaseMoment U (vo
+YM/OPE/Nesting/Profiles.lean:69: have ho:=same_in_mixture U R (voices v) (voices w) μ m (Kernel.cardPanel z y) ((hp _ z _ he h_c).1.2.2)
+YM/OPE/Nesting/Quantified.lean:45: orbitMargin R.port m (Tree.profile z) (anchor z) ∧ z∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R z v c‖ ≤ toll (wages v) ε m s ∧ ‖Kernel.output U R z v c - Kernel.chord U R z v c D‖ ≤ both
+YM/OPE/Nesting/Quantified.lean:45: orbitMargin R.port m (Tree.profile z) (anchor z) ∧ z∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R z v c‖ ≤ toll (wages v) ε m s ∧ ‖Kernel.output U R z v c - Kernel.chord U R z v c D‖ ≤ both
+YM/OPE/Nesting/Quantified.lean:45: orbitMargin R.port m (Tree.profile z) (anchor z) ∧ z∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R z v c‖ ≤ toll (wages v) ε m s ∧ ‖Kernel.output U R z v c - Kernel.chord U R z v c D‖ ≤ both
+YM/OPE/Nesting/Quantified.lean:45: orbitMargin R.port m (Tree.profile z) (anchor z) ∧ z∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R z v c‖ ≤ toll (wages v) ε m s ∧ ‖Kernel.output U R z v c - Kernel.chord U R z v c D‖ ≤ both
+YM/OPE/Nesting/Quantified.lean:46: refine parse_eventual'  h hM hη (fork n f) (fun q=> orbitMargin R.port m (Tree.profile q.2) (anchor q.2) ∧ q.2∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R q.2 v c‖ ≤ toll (wages v) ε m q.1
+YM/OPE/Nesting/Quantified.lean:46: refine parse_eventual'  h hM hη (fork n f) (fun q=> orbitMargin R.port m (Tree.profile q.2) (anchor q.2) ∧ q.2∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R q.2 v c‖ ≤ toll (wages v) ε m q.1
+YM/OPE/Nesting/Quantified.lean:46: refine parse_eventual'  h hM hη (fork n f) (fun q=> orbitMargin R.port m (Tree.profile q.2) (anchor q.2) ∧ q.2∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R q.2 v c‖ ≤ toll (wages v) ε m q.1
+YM/OPE/Nesting/Quantified.lean:46: refine parse_eventual'  h hM hη (fork n f) (fun q=> orbitMargin R.port m (Tree.profile q.2) (anchor q.2) ∧ q.2∈Kernel.aperture U R (fork n f) m D ∧ ‖Kernel.output U R q.2 v c‖ ≤ toll (wages v) ε m q.1
+YM/OPE/Nesting/Quantified.lean:50: filter_upwards [admit_nesting U R h ht v hg hs ha h₀ hε c D,admit_output U R h ht v hg hs ha h₀ hε c, Kernel.aperture_eventually (D:=D) U R ht hg m,he'] with i h₁ hh he ht
+YM/OPE/Nesting/Quantified.lean:51: rw [Kernel.resonantFork] at h₁; exact ⟨ht,he,hh,h₁⟩
+YM/OPE/Nesting/Quantified.lean:56: Kernel.cardPanel z y ∈ Orbits.guardZone U R m ∧ ‖Kernel.normData U R z v m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s ∧ ∀ q:Viewers U, ‖Kernel.pipe U R z v q m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s:=by
+YM/OPE/Nesting/Quantified.lean:56: Kernel.cardPanel z y ∈ Orbits.guardZone U R m ∧ ‖Kernel.normData U R z v m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s ∧ ∀ q:Viewers U, ‖Kernel.pipe U R z v q m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s:=by
+YM/OPE/Nesting/Quantified.lean:56: Kernel.cardPanel z y ∈ Orbits.guardZone U R m ∧ ‖Kernel.normData U R z v m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s ∧ ∀ q:Viewers U, ‖Kernel.pipe U R z v q m y w‖ ≤ toll (wages v) ε (m+1:ℝ) s:=by
+YM/OPE/Nesting/Quantified.lean:59: let Q (x:V):= Kernel.cardPanel x.2.1 x.2.2∈guardZone U R m ∧ ‖Kernel.normData U R x.2.1 v m x.2.2 w‖ ≤ bill x.1 ∧ ∀ q:Viewers U, ‖Kernel.pipe U R x.2.1 v q m x.2.2 w‖ ≤ bill x.1
+YM/OPE/Nesting/Quantified.lean:59: let Q (x:V):= Kernel.cardPanel x.2.1 x.2.2∈guardZone U R m ∧ ‖Kernel.normData U R x.2.1 v m x.2.2 w‖ ≤ bill x.1 ∧ ∀ q:Viewers U, ‖Kernel.pipe U R x.2.1 v q m x.2.2 w‖ ≤ bill x.1
+YM/OPE/Nesting/Quantified.lean:59: let Q (x:V):= Kernel.cardPanel x.2.1 x.2.2∈guardZone U R m ∧ ‖Kernel.normData U R x.2.1 v m x.2.2 w‖ ≤ bill x.1 ∧ ∀ q:Viewers U, ‖Kernel.pipe U R x.2.1 v q m x.2.2 w‖ ≤ bill x.1
+YM/OS/Dynamics.lean:78: simp only [Kernel.Gram.stems,Finsupp.linearCombination_single,map_smul,
+YM/OS/Flow.lean:31: simp only [timed,Kernel.Gram.stems,Finsupp.linearCombination_single, inner_smul_left, inner_smul_right,
+YM/OS/Flow.lean:44: simp only [offAxis,Kernel.Gram.stems,Finsupp.linearCombination_single,inner_smul_left,inner_smul_right,X.measure,
+YM/OS/Flow.lean:114: | single i c => simp_rw [Kernel.Gram.stems,Finsupp.linearCombination_single,map_smul]
+YM/OS/Schwinger.lean:69: apply NNKernel.criterion
+YM/OS/Schwinger.lean:80: abbrev Schwinger (S : Table L) (a : Axis) := Kernel.Gram fun (x y : Future L a) => S.gram a x.val y.val
+YM/OS/Schwinger.lean:82: theorem schwinger_ready (H : S.Hierarchy) : Nonempty (Schwinger S a) := Kernel.host (nonnegative H)
+YM/OS/Slabs.lean:132: simp only [Kernel.Gram.stems,Finsupp.linearCombination_single,map_smul,
+YM/OS/Train.lean:84: | single j s => simp [Kernel.Gram.stems,Up,inner_smul_left, inner_smul_right,V.GNS.measure, realignment h H.translations i j]
+YM/OS/Train.lean:93: rw [he]; simp [Kernel.Gram.stems]
+YM/OS/Train.lean:122: rw [Up, Kernel.Gram.stems,Finsupp.lmapDomain_apply,Finsupp.linearCombination_mapDomain];rfl]
+YM/Overlay/Terminal.lean:3: import YM.TimeKernel.Trace
+YM/PhysicalNext/AFTERNOON_INTERACTING_RANK_COMPARISON/Opacity/Beam.lean:110: rw [show chartCost Y g=chartCost C g from by unfold chartCost; rw [hf], h',ha,hq, YM.Push.Local.Kernel.exp_invariant hR]
+YM/PhysicalNext/AFTERNOON_INTERACTING_RANK_COMPARISON/Swatches.lean:36: have he : GaugeInvariant R.exponent := YM.Push.Local.Kernel.exp_invariant hp
+YM/PhysicalNext/AFTERNOON_INTERACTING_RANK_COMPARISON/Swatches.lean:38: (YM.Push.Local.Kernel.mask_gauge _ _ (H i).inv t U)
+YM/PhysicalNext/INTERPOLATED_SECANTS_FC/Blueprint.lean:37: def replay (R : RG.Rep G f) (β : ℝ) (h : Payload G f) : RG.Rep G f :=
+YM/PhysicalNext/INTERPOLATED_SECANTS_FC/Blueprint.lean:117: forced b h i U := L.mixture.average fun F => Cab.centre T x W r N (replay R b h) F B i.val.val U
+YM/PhysicalNext/RG_NEXT_ALL_FIELD_EXPANSION_DERIVATIVES/Garland.lean:28: open InterpolatedSecantsFc (Payload replay)
+YM/PhysicalNext/RG_NEXT_COMPLETE_REPEATABLE_NONLINEAR_STEP/Lotus/Class.lean:41: have hK: Zest K y j := (((hq.plusminus (h.settles (Y:=Prod.fst) hv)).scalar (gStep R.beta)⁻¹).replay L.toContinuousLinearMap)
+YM/PhysicalNext/RG_NEXT_COMPLETE_REPEATABLE_NONLINEAR_STEP/Lotus/Class.lean:45: have ht:Zest t y j:= (Zest.parallel M.profit (fun i=> M.earn (T' i))).paint (Zest.full (X.plaza (areas R T 0 X.B (M.turn.badge S))) _ (fun k _=> (hq.replay (ContinuousLinearMap.proj k)).wand (Glass.ti
+YM/PhysicalNext/RG_NEXT_COMPLETE_REPEATABLE_NONLINEAR_STEP/Meadow/Tableau.lean:42: lemma replay (γ' : ℝ) (k:ℕ) : barony I' χ k γ' x ((L).low.links f')=barony I χ k γ' x' f':= by
+YM/PhysicalNext/RG_NEXT_COMPLETE_REPEATABLE_NONLINEAR_STEP/Slide/Echo.lean:55: exact Meadow.replay («I»:= Y) (I':=K) («T»:=T) (T':=𝒯 H') hC (show 2 ≤ c.val from (by omega)) rfl h hb hβ Q (by dsimp only [Meadow.studio] at hc; omega) N' M' V ht γ n
+YM/PhysicalNext/V9_JOINT_ENDPOINT_LOAD/Psalm/Hush.lean:71: abbrev movie (k : S.Choices) (a : Museum F d.betaHat A X Y I) := replay d.tube d.betaHat k d.broadCut d.radius d.g a
+YM/PhysicalNext/V9_JOINT_ENDPOINT_LOAD/Psalm/Hush.lean:73: lemma toll_match {p : Cell f} (hp : Tests X p) (V) : toll (field k a U w V) p=toll (movie k a U w V) p := congr_arg G.chord (travel_local _ _ _ _ (fun i hi hj => replay_agrees a U w i (hp.retain (List
+YM/PhysicalNext/V9_JOINT_ENDPOINT_LOAD/Psalm/Hush.lean:80: have he : ContinuousAt (fun W => toll (movie k a U w W) p) V := (show Continuous (fun U : Config G f => toll U p) by unfold toll faceValue; fun_prop).continuousAt.comp (replay_cont a U w h.toPlays hV 
+YM/PhysicalNext/V9_JOINT_ENDPOINT_LOAD/Psalm/Hush.lean:91: have he W := uses_same S o (show Agrees (frameUses S o) (field k a U w W) (movie k a U w W) from fun i h h' => replay_agrees a U w i (hE h) (hE h'))
+YM/PhysicalNext/V9_JOINT_ENDPOINT_LOAD/Psalm/Hush.lean:93: filter_upwards [(replay_cont a U w h.toPlays hV hw).eventually (uses_open o hh)] with W hW
+YM/PhysicalNext/V9_JOINT_ENDPOINT_LOAD/Psalm/Hush.lean:99: have hh W := (show Agrees (predictorUses S e) (field k a U w W) (movie k a U w W) from fun i hi hj => replay_agrees a U w i (hE hi) (hE hj))
+YM/PhysicalNext/V9_JOINT_ENDPOINT_LOAD/Psalm/Hush.lean:102: filter_upwards [((replay_cont a U w h.toPlays hV hw).prodMk continuousAt_id).eventually (hc.opened hS)] with W hW
+YM/PhysicalNext/V9_JOINT_ENDPOINT_LOAD/Psalm/Sleeve.lean:36: abbrev replay (T : Tube G S) (x : ℝ) (k : S.Choices) (q : Chi) (d u : ℝ) {A : Stores S} {F : Forest S.ratio} (a : Museum F x A X Y I)
+YM/PhysicalNext/V9_JOINT_ENDPOINT_LOAD/Psalm/Sleeve.lean:40: lemma replay_agrees : Agrees (inspected X) (a.received k T q d u W (U W) (w W)) (replay T x k q d u a U w W) := fun _ h h' => (if_pos ⟨h,h'⟩).symm
+YM/PhysicalNext/V9_JOINT_ENDPOINT_LOAD/Psalm/Sleeve.lean:40: lemma replay_agrees : Agrees (inspected X) (a.received k T q d u W (U W) (w W)) (replay T x k q d u a U w W) := fun _ h h' => (if_pos ⟨h,h'⟩).symm
+YM/PhysicalNext/V9_JOINT_ENDPOINT_LOAD/Psalm/Sleeve.lean:79: lemma replay_cont (hw : ContinuousAt w V) : ContinuousAt (replay T x k q d u a U w) V := continuousAt_pi.mpr fun i => by
+YM/PhysicalNext/V9_JOINT_ENDPOINT_LOAD/Psalm/Sleeve.lean:79: lemma replay_cont (hw : ContinuousAt w V) : ContinuousAt (replay T x k q d u a U w) V := continuousAt_pi.mpr fun i => by
+YM/PhysicalNext/V9_JOINT_ENDPOINT_LOAD/Psalm/Sleeve.lean:80: unfold replay; split; swap; exact continuousAt_const
+YM/Planned/ATOM_GUARDED_LAYOUT/Fine.lean:99: ⟨Q.envelope B hd he hf,Kernel.insertion_gauge ht hd hf (Kernel.vacuum_actual (p:=p) h hj).2.1⟩
+YM/Planned/ATOM_GUARDED_LAYOUT/Fine.lean:99: ⟨Q.envelope B hd he hf,Kernel.insertion_gauge ht hd hf (Kernel.vacuum_actual (p:=p) h hj).2.1⟩
+YM/Planned/ATOM_GUARDED_LAYOUT/Fine.lean:122: intro k U; unfold salary; rw [(Kernel.vacuum_actual (p:=p) h hj).2.1 k U,invariant_mask hf.smooth.symmetry (Cur).p.threshold X k U]
+YM/Planned/ATOM_REGULAR_ESTIMATE/Localization.lean:68: if PackedKernel.active (R:=R) (i:=i) (S:=S) (X:=X) V then
+YM/Progress/DIRECTED_RECIPE/Marks.lean:10: import YM.TimeKernel.Trace
+YM/Push/CORRECTED_COLUMNS/Bel.lean:75: apply Kernel.host
+YM/Push/CORRECTED_COLUMNS/Bel.lean:76: apply NNKernel.criterion
+YM/Push/LOOP_COEFFICIENT/Block/Masses.lean:4: import YM.Push.LOOP_COEFFICIENT.Kernel.Mass
+YM/R2I/Vale/Petals.lean:42: lemma replayR (γ' : ℝ) (k:ℕ) : baronyR Θ₃ I' χ k γ' x ((L).low.links f')=baronyR Θ₃ I χ k γ' x' f':= by
+YM/RemainderComparison/Cascade/Unison.lean:34: have hK: Zest K y j := (((hq.plusminus (h.settles (Y:=Prod.fst) hv)).scalar (gStep R.beta)⁻¹).replay L.toContinuousLinearMap)
+YM/Slice/Gate.lean:96: | site => rw [show port C β K = (fun _ _ => 1) from funext fun x => funext fun y => wall C β K x y he]; exact NNKernel.one
+YM/Slice/Positive.lean:23: have he i j : NNKernel (K i j) := (NNKernel.gram (A i j)).plus (NNKernel.gram (B i j))
+YM/Slice/Positive.lean:23: have he i j : NNKernel (K i j) := (NNKernel.gram (A i j)).plus (NNKernel.gram (B i j))
+YM/Slice/Positive.lean:24: convert NNKernel.adds (fun i x y => ∑ j, K i j x y) Finset.univ (fun i _ => NNKernel.adds (K i) Finset.univ (fun j _ => he i j)) using 1
+YM/Slice/Positive.lean:24: convert NNKernel.adds (fun i x y => ∑ j, K i j x y) Finset.univ (fun i _ => NNKernel.adds (K i) Finset.univ (fun j _ => he i j)) using 1
+YM/Slice/Positive.lean:36: exact NNKernel.adds (fun (i : Tile a n) (x y : Leaf G a n) => ((G.mat (x i) * star (G.mat (y i))).trace.re : ℂ)) Finset.univ
+YM/Slice/Positive.lean:39: have ht := (NNKernel.one (X := Leaf G a n)).scaled (c := ((Real.exp (-β * Fintype.card (Tile a n)) : ℝ):ℂ)) (by positivity)
+YM/Slice/Positive.lean:44: convert (hs.times (NNKernel.gram e)).times he using 1
+YM/Slice/Positive.lean:86: refine NNKernel.accumulate (X := Thread G a n) (A := Leaf G a n) (B := Leaf G a n) (threads n G a) (g := fun X u => repaint a X u) (positive_weight a h) ?_
+YM/Slice/Reflection.lean:72: have hv := NNKernel.integrated (X := Open C G) (fieldM G C) (portPos C β u hβ) (portContinuous C β u)
+YM/Slice/Segment.lean:3: import YM.TimeKernel.Unit
+YM/Slice/Sequence.lean:110: TimeKernel.closed (trans n G a) k= ∫ p, TimeKernel.cycle v p ∂(Measure.pi fun _ : Fin m => trans n G a) := by
+YM/Slice/Sequence.lean:110: TimeKernel.closed (trans n G a) k= ∫ p, TimeKernel.cycle v p ∂(Measure.pi fun _ : Fin m => trans n G a) := by
+YM/Slice/Sequence.lean:111: subst m; unfold TimeKernel.closed
+YM/Slice/Sequence.lean:156: (partition G n β:ℂ)* moment β (word B b) = TimeKernel.closed (trans n G a) (cores B β) := by
+YM/Slice/Tour.lean:104: ∫ v : Fin m → Leaf G a n, TimeKernel.cycle (fun i => testB β (B i)) v ∂(Measure.pi fun _ => trans n G a) := by
+YM/Slice/Tour.lean:130: filter_upwards with x; unfold TimeKernel.cycle testB
+YM/TimeKernel/Unit.lean:1: import YM.TimeKernel.Trace
+YM/UVExtension/Orchard/Barrel.lean:55: try addDecl decl
+YM/Ward/Ket.lean:19: lemma represents (S : Kernel.Gram K) (f g : ℝ → S.H) (hg : Continuous g)
+YM/Ward/Ket.lean:41: | single i c => simp [Kernel.Gram.stems,inner_smul_left,z] at *; rw [ht]; exact Or.inl rfl
+YM/Work/B02/Analysis.lean:70: variable {X : Type} {K : X → X → ℂ} (J : Kernel.Gram K)
+YM/Work/B02/Analysis.lean:120: rw [Kernel.Gram.stems, Finsupp.linearCombination_single, observe_smul_right]
+YM/Work/B02/Analysis.lean:128: rw [Kernel.Gram.stems, Finsupp.linearCombination_single, observe_smul_left]
+YM/Work/B03.lean:50: simp only [Kernel.Gram.stems, Finsupp.linearCombination_single,
+YM/Work/B08.lean:127: apply NNKernel.criterion
+YM/Work/B08.lean:197: let Z : Schwinger T a := Classical.choice (Kernel.host (nnPoint H hspin hp))
+YM/Work/B09/Core.lean:143: simp only [Kernel.Gram.stems, Finsupp.linearCombination_single, inner_smul_left]
+YM/Work/C01.lean:26: | single i c => simp only [Kernel.Gram.stems,Finsupp.linearCombination_single,inner_smul_left,h]
+YM/Work/E05.lean:3: import YM.TimeKernel.Trace
+YM/Work/E08.lean:3: import YM.TimeKernel.Trace

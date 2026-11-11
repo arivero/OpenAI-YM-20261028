@@ -1,0 +1,12 @@
+2026-11-11T07:02:36+01:00
+control-accept: started
+control-accept: passed
+control-statement_mismatch: started
+control-statement_mismatch: passed
+control-forbidden_axiom: started
+control-forbidden_axiom: passed
+control-definition_mismatch: started
+control-definition_mismatch: passed
+Results: /path/to/ym-release/YM/submissions/openai-20261028/runs/20261111T060236.329911Z/result.json
+EXIT=0
+2026-11-11T07:02:56+01:00

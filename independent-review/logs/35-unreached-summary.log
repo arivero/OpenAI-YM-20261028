@@ -1,0 +1,67 @@
+project declarations: 250319; reached from jointExistence: 93969; reached from 17 endpoints: 100168; unreached (17): 150151
+source-level (heuristic: not internal/auxiliary): 115870; reached(17): 69238; unreached(17): 46632
+by kind (kind, reached17): count
+  ('ctor', False): 1963
+  ('ctor', True): 2356
+  ('def', False): 80556
+  ('def', True): 21292
+  ('inductive', False): 1868
+  ('inductive', True): 2308
+  ('opaque', False): 2
+  ('rec', False): 4000
+  ('rec', True): 176
+  ('theorem', False): 61762
+  ('theorem', True): 74036
+modules with project declarations: 9467; modules with no reached declaration: 2944
+unreached(17) by top-level dir (top 25): dir unreached/total (share)
+  YM.FullVolume: 16722/23548 (71%)
+  YM.RG08: 13272/20187 (66%)
+  YM.PhysicalNext: 12206/20949 (58%)
+  YM.RemainderComparison: 11197/12492 (90%)
+  YM.Push: 10176/15009 (68%)
+  YM.Next: 7769/23424 (33%)
+  YM.UVExtension: 7370/13112 (56%)
+  YM.Further: 7193/7982 (90%)
+  YM.AnalyticNext: 5944/10615 (56%)
+  YM.AnalyticBridge: 5832/10245 (57%)
+  YM.TraceExtension: 5500/14551 (38%)
+  YM.MergeProof: 5243/8534 (61%)
+  YM.Extra: 4675/6648 (70%)
+  YM.WilsonBulk: 3679/4065 (91%)
+  YM.Planned: 3526/4841 (73%)
+  YM.MultipleContact: 3169/3300 (96%)
+  YM.RG05Readout: 2506/2640 (95%)
+  YM.OPE: 2194/4410 (50%)
+  YM.SectorNext: 2020/3269 (62%)
+  YM.MultiNext: 1894/2264 (84%)
+  YM.ProjectorNext: 1431/1449 (99%)
+  YM.UVNext: 1384/2481 (56%)
+  YM.Extension: 1239/1239 (100%)
+  YM.Contacts: 1187/2748 (43%)
+  YM.Progress: 1168/1559 (75%)
+modules with zero reached declarations, grouped by YM.<dir>.<subdir> (top 25):
+  YM.Push.LOOP_COEFFICIENT: 157
+  YM.Planned.PRIMARY_INTEGRAL_295: 85
+  YM.AnalyticNext.QUARTIC_MATCH: 81
+  YM.MultipleContact.Bunch: 72
+  YM.Next.MULTISOURCE: 68
+  YM.Further.CURVED_GAUSSIAN_JETS: 58
+  YM.Extension.UV: 57
+  YM.MultiNext.VACUUM_STABILITY: 51
+  YM.Further.DENSE_MIXED_KERNELS: 39
+  YM.Push.CORRECTED_COLUMNS: 39
+  YM.PhysicalNext.ACTUAL_SECTOR_FACTOR_DICTIONARY: 39
+  YM.Next.WARD_BIN: 38
+  YM.AnalyticNext.GRID_STOP_ATTENUATION: 36
+  YM.PhysicalNext.ORDERED_AFFINE_2B: 34
+  YM.AnalyticNext.CUBIC_MATCH: 33
+  YM.Further.PHYSICAL_PERIOD_LIMIT_F933: 32
+  YM.AnalyticNext.CONNECTED_ACTIVITY_BOUNDS: 31
+  YM.SectorNext.RECONNECTED_LOCALITY: 29
+  YM.ProjectorNext.PROJECTOR_CALIBRATION: 28
+  YM.Push.STRESS_FLUX: 26
+  YM.MultipleContact.Multi: 25
+  YM.Extra.MULTISOURCE_TRAJECTORIES: 24
+  YM.Further.THRESHOLD_SOURCE_RESTART: 22
+  YM.Further.CORRECTED_LIFT_COEFFICIENTS: 22
+  YM.RG08.Canon: 21

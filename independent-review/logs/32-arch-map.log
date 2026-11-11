@@ -1,0 +1,4 @@
+START 2026-11-11T08:19:00+01:00 cwd=/path/to/ym-release/OpenAI-YM-20261028 cmd=lake env lean -DmaxHeartbeats=0 /path/to/ym-release/review/lean/ArchMap.lean
+ARCH reached=108070 dirEdges=1651 treeNodes=509
+TIME wall=43.02 s maxrss=12108712 KB
+END 2026-11-11T08:19:43+01:00 EXIT=0 WALL_SECONDS=43

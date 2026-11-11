@@ -1,0 +1,1 @@
+YM/Extra/ITERATION_NO_LOSS/Sums.lean:16: instance (priority := low) plaq_nonempty : Nonempty PlaqAxes := ⟨⟨(0,1),by decide⟩⟩

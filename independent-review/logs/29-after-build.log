@@ -1,0 +1,10 @@
+03-verify-joint EXIT=0
+04-usage EXIT=1
+05-compact-check EXIT=0
+31-own-audit EXIT=0
+32-arch-map EXIT=0
+33-own-replay EXIT=0
+POST_BUILD_DONE 2026-11-11T08:29:32+01:00
+comparator --target submission EXIT=0
+review EXIT=0
+AFTER_BUILD_DONE 2026-11-11T08:49:22+01:00

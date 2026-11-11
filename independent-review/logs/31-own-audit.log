@@ -1,0 +1,42 @@
+START 2026-11-11T08:17:47+01:00 cwd=/path/to/ym-release/OpenAI-YM-20261028 cmd=lake env lean -DmaxHeartbeats=0 /path/to/ym-release/review/lean/OwnAudit.lean
+YangMills.jointExistence : YangMills.JointExistence
+YangMills.su2Theory : ∃ C,
+  YangMills.WilsonRegularity C ∧ ∀ (p : ℕ → ℕ), StrictMono p → ∃ q, StrictMono q ∧ ∃ T, T.Properties (p ∘ q)
+'YangMills.jointExistence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'YangMills.constructed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'YangMills.su2Theory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'YangMills.su2Simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'YM.Nonperturbative.existence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ENDPOINT YangMills.jointExistence : YangMills.JointExistence (theorem, owner Solution)
+STATEMENT_MATCH constants=7122 publicSpecConstants=180 (all identical to reference; no YM owner)
+INVENTORY projectDeclarations=250319 kinds=[(inductive, 4176),
+ (opaque, 2),
+ (ctor, 4319),
+ (def, 101848),
+ (theorem, 135798),
+ (rec, 4176)]
+INVENTORY flagged=304 compilerUnsafeRecHelpers=302 otherFlagged=2: [OPAQUE _private.YM.UVExtension.Orchard.Barrel.0.Aging.ferment in YM.UVExtension.Orchard.Barrel,
+ OPAQUE _private.YM.UVExtension.Orchard.Barrel.0.Aging.store in YM.UVExtension.Orchard.Barrel]
+AXIOMS YangMills.jointExistence [propext, Classical.choice, Quot.sound]
+AXIOMS YangMills.constructed [propext, Classical.choice, Quot.sound]
+AXIOMS YangMills.su2Simple [propext, Classical.choice, Quot.sound]
+AXIOMS YangMills.su2Theory [propext, Classical.choice, Quot.sound]
+AXIOMS YM.Nonperturbative.existence [propext, Classical.choice, Quot.sound]
+AXIOMS YM.Nonperturbative.continuum [propext, Classical.choice, Quot.sound]
+AXIOMS YM.Nonperturbative.continuum_with_position_tests [propext, Classical.choice, Quot.sound]
+AXIOMS YM.Contacts.Solstice.celestial [propext, Classical.choice, Quot.sound]
+AXIOMS YM.Pert.Position.finite_leading [propext, Classical.choice, Quot.sound]
+AXIOMS YM.Pert.Position.normalized_four [propext, Classical.choice, Quot.sound]
+AXIOMS YM.Pert.Parity.parityEndpoint [propext, Classical.choice, Quot.sound]
+AXIOMS YM.Pert.Parity.low_read [propext, Classical.choice, Quot.sound]
+AXIOMS YM.Pert.Asymptotics.comparison [propext, Classical.choice, Quot.sound]
+AXIOMS YM.SharpGram.habitat [propext, Classical.choice, Quot.sound]
+AXIOMS YM.SharpGram.inletFirst [propext, Classical.choice, Quot.sound]
+AXIOMS YM.SharpGram.outletFirst [propext, Classical.choice, Quot.sound]
+AXIOMS YM.Independent.Core.point [propext, Classical.choice, Quot.sound]
+REACH fromJointExistence=93969 from17=100168 of projectDeclarations=250319
+VINTAGE generated=208 reachedFromJointExistence=0
+UNSAFE_REC reachedFrom17=0
+OWN_AUDIT_DONE
+TIME wall=72.99 s maxrss=20235364 KB
+END 2026-11-11T08:19:00+01:00 EXIT=0 WALL_SECONDS=73

@@ -1,0 +1,4 @@
+START 2026-11-11T08:19:30+01:00 cwd=/path/to/ym-release/review/run-usage (lean-toolchain copied from the clone: leanprover/lean4:v4.32.0)
+USAGE_PASS headlines=17 project=250319 used=100168 outside=150151 modules=9469 modulesWithNoUsedDeclaration=2946
+TIME wall=26.56 s maxrss=12379460 KB
+END 2026-11-11T08:19:57+01:00 EXIT=0

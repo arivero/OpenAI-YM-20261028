@@ -1,0 +1,13 @@
+START 2026-11-11T08:29:32+01:00 verify.py comparator --target submission --source /path/to/ym-release/OpenAI-YM-20261028
+control-accept: started
+control-accept: passed
+control-statement_mismatch: started
+control-statement_mismatch: passed
+control-forbidden_axiom: started
+control-forbidden_axiom: passed
+control-definition_mismatch: started
+control-definition_mismatch: passed
+comparator-submission: started
+comparator-submission: passed
+Results: /path/to/ym-release/YM/submissions/openai-20261028/runs/20261111T072932.552598Z/result.json
+END 2026-11-11T08:47:38+01:00 EXIT=0 WALL_SECONDS=1086

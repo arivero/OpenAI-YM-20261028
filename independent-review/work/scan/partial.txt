@@ -1,0 +1,2 @@
+YM/UVExtension/Orchard/Barrel.lean:36: private partial def ferment (env:Environment) (e:Expr): Expr:=e.replace (fun t=>
+YM/UVExtension/Orchard/Barrel.lean:43: private partial def store (n:Name) (s:Std.HashSet Name) (requested := false): CoreM (Std.HashSet Name) := do

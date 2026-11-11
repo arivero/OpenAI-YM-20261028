@@ -1,0 +1,5 @@
+START 2026-11-11T08:19:43+01:00 cwd=/path/to/ym-release/OpenAI-YM-20261028 cmd=lake env lean -DmaxHeartbeats=0 /path/to/ym-release/review/lean/OwnReplay.lean
+OWN_REPLAY_START projectDecls=93999 externalRefs=14112 baseModules=10910
+OWN_REPLAY_PASS projectDecls=93999 seconds=564
+TIME wall=588.71 s maxrss=20995552 KB
+END 2026-11-11T08:29:32+01:00 EXIT=0 WALL_SECONDS=589
