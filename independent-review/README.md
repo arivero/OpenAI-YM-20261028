@@ -34,6 +34,8 @@ Each note answers one question raised after the main review. They are commentary
 | [notes/08-FREE-REMARKS.md](notes/08-FREE-REMARKS.md) | Free remarks by Claude Fable 5.2 |
 | [notes/09-FERMION-DOUBLING.md](notes/09-FERMION-DOUBLING.md) | What do the sources show about fermions, and how could doubling be handled? |
 | [notes/10-LEAN-VARIATIONS.md](notes/10-LEAN-VARIATIONS.md) | Which variations were written and compiled in Lean? |
+| [notes/11-LOWER-DIMENSIONS.md](notes/11-LOWER-DIMENSIONS.md) | Where is D=4 fixed, and which parts simplify in D=3,2,1? Includes a compiled finite-lattice probe |
+| [notes/12-CLAIMS-BY-DIMENSION.md](notes/12-CLAIMS-BY-DIMENSION.md) | What can be claimed for D>4,4,3,2,1, including Wick rotation to quantum mechanics, Klein–Gordon and matter? |
 
 ## Findings in brief
 
