@@ -26,6 +26,7 @@ Each note answers one question raised after the main review. They are commentary
 |---|---|
 | [notes/01-PROVENANCE.md](notes/01-PROVENANCE.md) | Where do the methods of the proof come from? |
 | [notes/02-GENERALITY.md](notes/02-GENERALITY.md) | Which gauge groups does the theorem cover? |
+| [notes/03-GUIDING-EXAMPLES.md](notes/03-GUIDING-EXAMPLES.md) | What do SU(4), SU(3)×U(1) and broken su(4) teach about the proof? |
 
 ## Findings in brief
 

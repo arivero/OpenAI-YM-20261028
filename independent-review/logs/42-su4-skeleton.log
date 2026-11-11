@@ -1,0 +1,3 @@
+'ReviewSU4.su4Theory' depends on axioms: [propext, Classical.choice, Quot.sound]
+WALL=3.91 s MAXRSS=10950380 KB
+EXIT=0
