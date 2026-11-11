@@ -1,0 +1,10 @@
+'ReviewAniso.converges_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewAniso.regular_of_isotropic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewAniso.convergesK_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewAniso.compactified_of_public' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewAniso.compactified_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewAnisoChecks.eventually_suitable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewAnisoChecks.no_token_of_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewAnisoChecks.compactified_degenerate' depends on axioms: [propext, Classical.choice, Quot.sound]
+WALL=7.52 s MAXRSS=6873764 KB
+EXIT=0

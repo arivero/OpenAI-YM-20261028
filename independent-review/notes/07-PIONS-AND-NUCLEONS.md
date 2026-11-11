@@ -5,7 +5,7 @@
 | Kind of statement in this note | Basis |
 |---|---|
 | The group S(U(3)×U(1)) and its generator Z = i·diag(1,1,1,−3) | Machine-checked definitions in `lean/BrokenSU4Probe.lean` (Note 3) |
-| The centre lemma of section 2 | Machine-checked in `lean/VariationCharge.lean` if that file is present; otherwise the hand derivation given here |
+| The centre lemma of section 2 | Machine-checked: `centre_in_U1` and `charge_congruence` in `lean/VariationCharge.lean` (Note 10). The step from the centre to the triality of a representation is the argument in words given here |
 | Quotes | Released documents, read directly; "A §n" is `docs/assessment-1.pdf` |
 | Hadron physics, anomaly matching, mass inequalities, lattice fermions, numerical values | Standard physics from general knowledge; references from memory, unchecked. Nothing here is a result of the review |
 

@@ -1,0 +1,75 @@
+def plaquette {g : GaugeGroup} {l : Axis → ℕ+} (U : Configuration g l) (x : Site l)
+    (i j : Axis) : g.image :=
+  U (x,i) * (U (x + Pi.single i 1,j) *
+    ((U (x + Pi.single j 1,i))⁻¹ * (U (x,j))⁻¹))
+
+def wilsonEnergy {g : GaugeGroup} {l : Axis → ℕ+} (U : Configuration g l) : ℝ :=
+  ∑ p : Site l × Directions,
+    (1 - ((plaquette U p.1 p.2.val.1 p.2.val.2).val.val.trace).re / ((g.n+1 : ℕ) : ℝ))
+
+def wilsonLaw (g : GaugeGroup) (l : Axis → ℕ+) (β : ℝ) (haar : Measure g.image) :
+    Measure (Configuration g l) :=
+  let prior : Measure (Configuration g l) := Measure.pi fun _ => haar
+  let density := fun U : Configuration g l => Real.exp (-β * wilsonEnergy U)
+  prior.withDensity fun U => ENNReal.ofReal (density U / ∫ V, density V ∂prior)
+
+/-- A Wilson family on tori whose periods may differ from direction to direction. -/
+structure WilsonFamily (g : GaugeGroup) where
+  period : ℕ → Axis → ℕ+
+  denominator : ℕ → ℕ+
+  denominatorStrict : StrictMono fun N => (denominator N).val
+  beta : ℕ → ℕ → ℝ
+  haar : Measure g.image
+  probability : IsProbabilityMeasure haar
+  invariantHaar : haar.IsHaarMeasure
+  Token : Type
+  insertion (N p : ℕ) : Token → Site (fun i => period p i * denominator N) →
+    Configuration g (fun i => period p i * denominator N) → ℂ
+
+namespace WilsonFamily
+variable {g : GaugeGroup} (C : WilsonFamily g)
+
+abbrev side (N p : ℕ) : Axis → ℕ+ := fun i => C.period p i * C.denominator N
+
+def mesh (N : ℕ) := ((C.denominator N).val : ℝ)⁻¹
+
+def place (N p : ℕ) (y : Site (C.side N p)) : Spacetime :=
+  WithLp.toLp 2 fun i => C.mesh N * (ZMod.valMinAbs (y i) : ℝ)
+
+def finiteMoment (N p : ℕ) {n : ℕ} (labels : Fin n → C.Token)
+    (x : Fin n → Site (C.side N p)) : ℂ :=
+  ∫ U, ∏ i, C.insertion N p (labels i) (x i) U
+    ∂wilsonLaw g (C.side N p) (C.beta N p) C.haar
+
+/-- The test function fits inside the box, direction by direction. -/
+def suitable (p : ℕ) {n : ℕ} (t : WilsonFamily.SeparatedTest n) : Prop :=
+  tsupport t ⊆ {x : Points n | ∀ i a, -((C.period p a).val / (2:ℝ)) < x i a ∧
+    x i a < (C.period p a).val / (2:ℝ)}
+
+def smear (N p : ℕ) {n : ℕ} (v : Fin n → C.Token) (t : WilsonFamily.SeparatedTest n) : ℂ :=
+  (C.mesh N : ℂ) ^ (4*n) * ∑ x : Fin n → Site (C.side N p),
+    t (WithLp.toLp 2 fun i => C.place N p (x i)) * C.finiteMoment N p v x
+
+/-- Full mesh limit at each suitable fixed geometry, then the limit along the indicated
+sequence of geometries. -/
+def Converges (volumeOrder : ℕ → ℕ)
+    (unselected : {n : ℕ} → (Fin n → C.Token) → Points n → ℂ) : Prop :=
+  ∀ n (v : Fin n → C.Token) (t : WilsonFamily.SeparatedTest n),
+    (∀ᶠ k : ℕ in atTop, C.suitable (volumeOrder k) t) ∧ ∃ row : ℕ → ℂ,
+    (∀ p, C.suitable p t → Tendsto (fun N => C.smear N p v t) atTop (𝓝 (row p))) ∧
+    Tendsto (fun k => row (volumeOrder k)) atTop (𝓝 (∫ x, t x * unselected v x))
+
+end WilsonFamily
+
+/-- The regularity conditions of the public statement, on anisotropic tori. -/
+structure WilsonRegularity {g : GaugeGroup} (C : WilsonFamily g) : Prop where
+  running : ∃ slope : ℝ, 0 < slope ∧ ∀ ε : ℝ, 0 < ε →
+    ∀ᶠ N : ℕ in atTop, ∀ p, |C.beta N p / Real.log (C.mesh N)⁻¹ - slope| < ε
+  continuous (N p v x) : Continuous (C.insertion N p v x)
+  invariant (N p v x) (t : Site (C.side N p) → g.image) (U) :
+    C.insertion N p v x (fun e => t e.1 * U e * (t (e.1 + Pi.single e.2 1))⁻¹) =
+      C.insertion N p v x U
+  localSupport (v : C.Token) : ∃ stencil : Finset (Axis → ℤ), ∀ N p (x : Site (C.side N p)),
+    let sites := stencil.image fun z => (fun i => (z i : ZMod (C.side N p i).val)) + x
+    ∀ U V, (∀ e, e.1 ∈ sites → e.1 + Pi.single e.2 1 ∈ sites → U e = V e) →
+      C.insertion N p v x U = C.insertion N p v x V

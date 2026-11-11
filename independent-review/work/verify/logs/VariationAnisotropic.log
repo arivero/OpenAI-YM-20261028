@@ -1,0 +1,4 @@
+'ReviewAniso.converges_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewAniso.compactified_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+WALL=2.75 s MAXRSS=6680544 KB
+EXIT=0

@@ -45,7 +45,7 @@ Every estimate is a payment against a budget; runs of the construction are "fund
 1. **Paraphrase the semantic layer.** Write `YM.Family.Makes` and `YM.Spec.Final` in ordinary mathematics. This is the highest-value human task, and it is small compared with the proof.
 2. **Diversify the checkers.** Run an independent kernel on the exported proof, and Comparator inside its sandbox.
 3. **Probe the detailed theorem as the public one was probed.** Derive consequences that would be absurd if the definitions were hollow. My first candidate is the nonzero truncated three-point function ⟨T; Θ; Θ⟩, which follows from the Ward identity and the trace law by an argument I gave without formalizing it (`SCHEME.md`, reservation G8).
-4. **Instantiate beyond SU(2).** A simplicity proof for su(N) in Lean turns the theorem into statements about SU(3) and SU(4).
+4. **Instantiate beyond SU(2).** A simplicity proof for su(N) in Lean turns the theorem into statements about SU(3) and SU(4). This item was carried out later in the review: `lean/VariationSUN.lean` (Note 10).
 5. **Watch the two-loop number.** The group has already written the criterion: the ratio b₁/b₀² = 102/121, the same for every simple group (`KernelUVAsymptoticallyFree` in the group's package). The October proof stops at leading order, and the November submission claims perturbative matching. A universal rational number that a construction must reproduce is the sharpest test I can see on the horizon.
 6. **A first spectral result in a box.** A Hamiltonian at fixed volume, followed by Lüscher's small-volume expansion (Note 4).
 

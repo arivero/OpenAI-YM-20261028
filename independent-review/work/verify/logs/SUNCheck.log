@@ -1,0 +1,98 @@
+'ReviewSUN.suN_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.suNTheory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.su3Theory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.su4Theory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.su5Theory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.mem_lie_of_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.A_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.S_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.Hd_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.diag_sum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.filt_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.extract' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.spread' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.all_A' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.two_smul_skew' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.ideal_eq_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.suN_size' depends on axioms: [propext, Classical.choice, Quot.sound]
+ReviewSUN.suN_simple : ∀ (m : ℕ), (ReviewSUN.suN m).IsSimple
+ReviewSUN.suN_simple : ∀ (m : ℕ), (ReviewSUN.suN m).IsSimple
+@ReviewSUN.ideal_eq_top : ∀ {m : ℕ} (I : Submodule ℝ (ReviewSUN.Mat m)),
+  (∀ X ∈ (ReviewSUN.SUN m).lie, ∀ Y ∈ I, X * Y - Y * X ∈ I) →
+    I ≤ (ReviewSUN.SUN m).lie → I ≠ ⊥ → I = (ReviewSUN.SUN m).lie
+@ReviewSUN.extract : ∀ {m : ℕ} (I : Submodule ℝ (ReviewSUN.Mat m)),
+  (∀ X ∈ (ReviewSUN.SUN m).lie, ∀ Y ∈ I, X * Y - Y * X ∈ I) →
+    ∀ X ∈ I, star X = -X → ∀ (j k : ReviewSUN.Idx m), j ≠ k → X j k ≠ 0 → ReviewSUN.A j k ∈ I
+ReviewSUN.suNTheory: syntactically equal to JointExistence body at its group = true; reducible defeq = true
+ReviewSUN.su3Theory: syntactically equal to JointExistence body at its group = true; reducible defeq = true
+ReviewSUN.su4Theory: syntactically equal to JointExistence body at its group = true; reducible defeq = true
+ReviewSUN.su5Theory: syntactically equal to JointExistence body at its group = true; reducible defeq = true
+YangMills.su2Theory: syntactically equal to JointExistence body at its group = true; reducible defeq = true
+SUN_REPLAY_START localDecls=65 externalRefs=818 names=[ReviewSUN.Hd_of_A,
+ ReviewSUN.filt._proof_1,
+ ReviewSUN.refl_conj_apply,
+ ReviewSUN.su3Theory,
+ ReviewSUN.SUN,
+ ReviewSUN.su5Theory,
+ ReviewSUN.extract,
+ ReviewSUN.refl_S,
+ ReviewSUN.suN_simple,
+ ReviewSUN.A_apply,
+ ReviewSUN.star_S,
+ ReviewSUN.rr_right,
+ ReviewSUN.comm_A_A,
+ ReviewSUN.star_A,
+ ReviewSUN.SUN._proof_2,
+ ReviewSUN.EE,
+ ReviewSUN.S_apply,
+ ReviewSUN.filt,
+ ReviewSUN.Mat,
+ ReviewSUN.refl,
+ ReviewSUN.Hd_mem,
+ ReviewSUN.suN,
+ ReviewSUN.ideal_eq_top._abel_1_2,
+ ReviewSUN.mem_lie_of_reflection,
+ ReviewSUN.Hd_eq_diagonal._simp_1_3,
+ ReviewSUN.Hd,
+ ReviewSUN.Hd_of_A._abel_1_1,
+ ReviewSUN.A,
+ ReviewSUN.su4Theory,
+ _private._stdin.0.ReviewSUN.ph_prod,
+ ReviewSUN.ideal_eq_top,
+ ReviewSUN.filt_apply,
+ ReviewSUN.refl_A,
+ ReviewSUN.refl_mul_refl,
+ ReviewSUN.ad_Hd_apply,
+ ReviewSUN.SUN._proof_3,
+ ReviewSUN.diag_sum_zero,
+ ReviewSUN.A_swap,
+ _private._stdin.0.ReviewSUN.ph,
+ ReviewSUN.all_A,
+ ReviewSUN.A_swap._abel_1_1,
+ ReviewSUN.comm_A_A._abel_1_2,
+ ReviewSUN.S_of_A,
+ ReviewSUN.A_mem,
+ ReviewSUN.comm_A_S._abel_1_4,
+ ReviewSUN.Idx,
+ ReviewSUN.rr,
+ _private._stdin.0.ReviewSUN.exp_smul_diag,
+ ReviewSUN.comm_Hd_A,
+ ReviewSUN.comm_A_S,
+ ReviewSUN.suNTheory,
+ ReviewSUN.ad_mem,
+ ReviewSUN.suN._proof_2,
+ ReviewSUN.spread._abel_1_1,
+ ReviewSUN.S,
+ ReviewSUN.comm_Hd_A._abel_1_4,
+ ReviewSUN.two_smul_skew,
+ ReviewSUN.SUN._proof_1,
+ ReviewSUN.spread,
+ ReviewSUN.suN._proof_1,
+ ReviewSUN.SUN._proof_4,
+ ReviewSUN.rr_left,
+ ReviewSUN.S_mem,
+ ReviewSUN.ad,
+ ReviewSUN.Hd_eq_diagonal]
+SUN_REPLAY_PASS localDecls=65
+WALL=22.11 s MAXRSS=25837976 KB
+EXIT=0

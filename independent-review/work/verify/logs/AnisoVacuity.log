@@ -1,0 +1,8 @@
+'ReviewVerify.compactified_trivial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewVerify.no_token_of_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewVerify.compactified_forces_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewAniso.regular_of_isotropic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewAniso.converges_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewAniso.compactified_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+WALL=8.15 s MAXRSS=6882304 KB
+EXIT=0

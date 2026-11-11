@@ -66,6 +66,8 @@ def wilsonLaw (g : GaugeGroup) (l : ℕ+) (β : ℝ) (haar : Measure g.image) :
 
 is a family of probability measures on spaces of gauge networks over the periodic lattice, with weight exp(−β · spectral action). The link variables, the Haar measure and the plaquette energy are the same objects under other names, so every step of the proof applies unchanged. The theorem then reads: the integral over finite spectral triples of this type has a continuum limit for its gauge-invariant local correlations, for each simple matrix algebra with unimodularity.
 
+The kinematic half of this rewriting is formalized in `lean/VariationGaugeNetwork.lean`: every configuration of the public statement carries a self-adjoint hopping operator, a gauge transformation in the form of `WilsonRegularity.invariant` conjugates it by a block-diagonal unitary, and its spectral moments are gauge invariant (`hop_star`, `hop_gaugeAct`, `moment_gaugeAct`; Note 10, section 4). The identity between a spectral action and the Wilson energy, the hopping expansion, is left unformalized.
+
 This rewriting is a change of language. Its value would lie in what the new language suggests next: vertex triples with a Dirac operator bring in Higgs fields and fermions in a controlled way, which is the direction of the group's planned QCD category.
 
 ## 3. Level two: a spectral cutoff as regulator

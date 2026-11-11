@@ -10,7 +10,7 @@
 
 ## Answer in brief
 
-The theorem is one statement for a whole class: every compact Lie group whose Lie algebra is simple, presented as a closed group of unitary matrices in any faithful representation. One proof serves all of them, without case analysis on the group. Only SU(2) has been instantiated formally. Abelian groups, groups with a U(1) factor, product groups and finite groups fail the hypothesis.
+The theorem is one statement for a whole class: every compact Lie group whose Lie algebra is simple, presented as a closed group of unitary matrices in any faithful representation. One proof serves all of them, without case analysis on the group. The submission instantiates SU(2) only. This review adds a machine-checked proof of the hypothesis for SU(N), every N ≥ 2, and with it formal instances of the theorem for SU(3), SU(4) and SU(5) (`lean/VariationSUN.lean`, Note 10). Abelian groups, groups with a U(1) factor, product groups and finite groups fail the hypothesis.
 
 ## 1. The hypothesis
 
@@ -44,7 +44,7 @@ Two classical facts show that this class is the natural one. Every compact Lie g
 
 | Group, in a faithful unitary representation | Lie algebra | Covered | Reason |
 |---|---|---|---|
-| SU(N), N ≥ 2 | su(N) | Yes | Simple |
+| SU(N), N ≥ 2 | su(N) | Yes | Simple; machine-checked here as `suN_simple` |
 | SO(3), SO(N) for N ≥ 5 | so(N) | Yes | Simple |
 | Sp(N), N ≥ 1 | sp(N) | Yes | Simple |
 | G₂, F₄, E₆, E₇, E₈ | exceptional | Yes | Simple |
@@ -113,7 +113,7 @@ theorem trace_adjoint (h : G.Simple) (x y : G.Color) :
 | The slope 11·C/(24π²) is positive | `slopeConstant_pos` | 82 | Asymptotic freedom in every direction of the Lie algebra; the coupling runs to zero at short distance |
 | The Lie algebra is nonzero | `Simple.nontrivial_color` | 22 | Nondegeneracy |
 
-For a group with two simple factors the space of invariant quadratic forms is two-dimensional. The flow then needs two couplings with two slopes, and the space of conserved symmetric tensors of degree 4 has dimension two. For a U(1) factor the slope is zero. The structures `Rep.beta : ℝ` (`YM/RG/History.lean:170`) and `running` with a single positive slope (`ChallengeSpec.lean:13`) have no room for either case. Note 3 works this out on examples.
+For a group with two simple factors the space of invariant quadratic forms is two-dimensional. The flow then has two couplings with two slopes, which a single bare coupling can follow only in special cases (section 7), and the space of conserved symmetric tensors of degree 4 has dimension two. For a U(1) factor the slope is zero. The structures `Rep.beta : ℝ` (`YM/RG/History.lean:170`) and `running` with a single positive slope (`ChallengeSpec.lean:13`) have no room for either case. Note 3 works this out on examples.
 
 ## 5. The role of the representation
 
@@ -146,9 +146,11 @@ Two instances of the same Lie algebra, such as SU(2) in the defining representat
 
 ## 6. Instances proved so far
 
-`ConcreteSU2.lean` is the only instance. Its simplicity proof, `YM/Examples/SU2.lean`, is 112 lines of explicit computation with three 2×2 matrices. Applying the theorem to another group needs a Lean proof of `IsSimple` for that group, and nothing else. Our search of `Mathlib/Algebra/Lie` at the pinned revision found the abstract notion `LieAlgebra.IsSimple` and a root-system criterion, with no ready theorem for sl(N) or su(N). A proof for su(N) by elementary matrices is a self-contained exercise that we estimate at a few hundred lines; we have left it undone.
+In the submission `ConcreteSU2.lean` is the only instance. Its simplicity proof, `YM/Examples/SU2.lean`, is 112 lines of explicit computation with three 2×2 matrices. Applying the theorem to another group needs a Lean proof of `IsSimple` for that group, and nothing else. Our search of `Mathlib/Algebra/Lie` at the pinned revision found the abstract notion `LieAlgebra.IsSimple` and a root-system criterion, with no ready theorem for sl(N) or su(N).
+
+This review supplies the proof for su(N), every N ≥ 2, by elementary matrices (`lean/VariationSUN.lean`, 615 lines; outline in Note 10). The instances `suNTheory`, `su3Theory`, `su4Theory` and `su5Theory` follow by one application of `YangMills.jointExistence`.
 
 ## 7. Semisimple and abelian groups in principle
 
-- **Products of simple groups.** With one coupling per factor the Wilson measure of a product group is a product measure, and the theory is the tensor product of the theories of the factors. Existence for semisimple groups would follow from the simple case. The public statement has a single coupling and a single trace, so it leaves this corollary unstated.
+- **Products of simple groups.** For a product group in block-diagonal form the Wilson energy is a sum over the factors, so the measure is a product measure and the theory is the tensor product of the theories of the factors, each with its own coupling. Existence for semisimple groups would follow from the simple case. The public statement has a single coupling and a single trace, so it leaves this corollary unstated. `lean/VariationProduct.lean` checks the algebra: a single coupling gives the factors couplings in the ratio of their matrix sizes, and two logarithmic slopes can both hold only in that ratio. With the slopes of section 5, a one-loop computation of ours that is unformalized, this means m₁ = m₂ for SU(m₁)×SU(m₂) in block form: equal factors can share one bare coupling and unequal ones need one each (Note 10, section 5).
 - **U(1).** Pure U(1) gauge theory is free in the continuum, with a traceless stress tensor. The trace test of the theorem (a nonzero Θ with a log⁻² law) is false there, and the correct statements are of a different kind; rigorous results on the continuum limit of the U(1) lattice theory exist in the literature (Gross 1983; Driver 1987).

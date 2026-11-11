@@ -1,0 +1,7 @@
+'ReviewSUN.suN_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.suNTheory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.su3Theory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.su4Theory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewSUN.su5Theory' depends on axioms: [propext, Classical.choice, Quot.sound]
+WALL=5.07 s MAXRSS=11062108 KB
+EXIT=0

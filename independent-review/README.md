@@ -33,6 +33,7 @@ Each note answers one question raised after the main review. They are commentary
 | [notes/07-PIONS-AND-NUCLEONS.md](notes/07-PIONS-AND-NUCLEONS.md) | What can be said about pions and nucleons from S(U(3)×U(1))? |
 | [notes/08-FREE-REMARKS.md](notes/08-FREE-REMARKS.md) | Free remarks by Claude Fable 5.2 |
 | [notes/09-FERMION-DOUBLING.md](notes/09-FERMION-DOUBLING.md) | What do the sources show about fermions, and how could doubling be handled? |
+| [notes/10-LEAN-VARIATIONS.md](notes/10-LEAN-VARIATIONS.md) | Which variations were written and compiled in Lean? |
 
 ## Findings in brief
 
@@ -41,6 +42,7 @@ Each note answers one question raised after the main review. They are commentary
 3. **What is proved:** a Wightman quantum field theory obtained as a continuum limit of four-dimensional Wilson lattice gauge theory, for one phase of a subsequential infinite-volume limit, with a stress tensor, an operator product expansion and the leading short-distance laws of asymptotic freedom.
 4. **What stays open:** the mass gap, uniqueness of the infinite-volume limit and of the phase, universality of the lattice limit, all-orders perturbative agreement, Wilson loops and particle states.
 5. **Main caution of this review:** the public target leaves the identity of the lattice observables unspecified; the Yang–Mills identification sits in the detailed theorem, stated through internal definitions that no human has yet read in full.
+6. **An extension made by this review:** the hypothesis of the theorem is proved in Lean for SU(N), every N ≥ 2, which gives formal instances of the public theorem for SU(3), SU(4) and SU(5); the submission has SU(2) only (`lean/VariationSUN.lean`, Note 10).
 
 ## Novelty and review status
 
@@ -50,6 +52,8 @@ Each note answers one question raised after the main review. They are commentary
 | Techniques it formalizes: block-spin renormalization group, reflection positivity, OS reconstruction | Known mathematics |
 | Rebuild, axiom audit, kernel replay, rerun of the group's checks (this review) | Reproduction of existing claims on independent hardware |
 | Probes A, B, D, E of the public statement (this review) | New, machine-checked, small |
+| Simplicity of su(N) in the form the theorem needs, and the instances for SU(N) (this review) | A classical fact, formalized here; the submission and the pinned Mathlib have no such statement for su(N). Machine-checked |
+| Other Lean variations: charge quantization, anisotropic tori, hopping operator, product groups (this review) | New formal statements and small lemmas. For compact directions only the lattice-limit clause is formulated and calibrated; no family with observables is constructed there |
 | Reading of the statement, proof scheme, account of the spectrum (this review) | Our interpretation; unreviewed |
 | The remark that the Ward identity forces a nonzero truncated ⟨T; Θ; Θ⟩ | Ours; unformalized |
 | Conditional elements | All conclusions about Yang–Mills content depend on the internal definitions meaning what their comments say |
@@ -68,4 +72,4 @@ lake env lean independent-review/lean/SpecProbes.lean
 lake env lean independent-review/lean/ZeroInsertionProbe.lean
 ```
 
-`OwnAudit.lean` and `ArchMap.lean` write their tables to an absolute output directory set inside the file; adjust it before running. Building executes the submission's Lean code with the permissions of the account that runs it.
+`OwnAudit.lean` and `ArchMap.lean` write their tables to an absolute output directory set inside the file; adjust it before running. Files that import the full solution (`OwnAudit.lean`, `OwnReplay.lean`, `VariationSUN.lean`, `SU4Skeleton.lean`) need between 11 and 21 GB of memory. Building executes the submission's Lean code with the permissions of the account that runs it.

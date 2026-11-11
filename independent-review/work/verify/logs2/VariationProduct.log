@@ -1,0 +1,5 @@
+'ReviewProduct.block_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewProduct.energy_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewProduct.slope_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+WALL=2.68 s MAXRSS=6716812 KB
+EXIT=0

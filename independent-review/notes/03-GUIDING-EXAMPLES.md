@@ -4,13 +4,13 @@
 
 | Kind of statement in this note | Basis |
 |---|---|
-| Lean statements about SU(4) and S(U(3)×U(1)) | Machine-checked here: `lean/BrokenSU4Probe.lean`, `lean/SU4Skeleton.lean`, logs `logs/41-…` and `logs/42-…`, standard axioms only |
+| Lean statements about SU(4) and S(U(3)×U(1)) | Machine-checked here: `lean/BrokenSU4Probe.lean`, `lean/SU4Skeleton.lean`, `lean/VariationSUN.lean`, logs `logs/41-…`, `logs/42-…` and `logs/43-…`, standard axioms only |
 | Which lemmas of the proof use simplicity | Reading of `YM/Gauge/Casimir.lean` (Note 2, section 4) |
 | Group theory, constants, expected continuum limits, physics of symmetry breaking | Standard material and our own reasoning; unformalized |
 
 ## Answer in brief
 
-- **SU(4)** lies inside the theorem. The only missing piece for a formal instance is a Lean proof that su(4) is simple; we compiled the instance conditional on that proof.
+- **SU(4)** lies inside the theorem, and the formal instance now exists: `ReviewSUN.su4Theory` in `lean/VariationSUN.lean`, which proves simplicity of su(N) for every N ≥ 2 (Note 10).
 - **SU(3)×U(1)**, realized as the subgroup S(U(3)×U(1)) of SU(4), lies outside. We proved in Lean that it is a legitimate gauge group of the public statement and that it fails the hypothesis. It is the cleanest example of what simplicity buys: one coupling, one slope, one stress tensor, and a mass gap that can hold at all.
 - **Broken su(4)**, an SU(4) gauge theory whose symmetry is broken to SU(3)×U(1), needs a scalar field or an extra dimension, and both are outside the construction. As a thought experiment it is valuable: it has an asymptotically free gauge coupling and a massless photon.
 
@@ -18,9 +18,9 @@
 
 | Group | Realization in U(4) | Lie algebra | Status for the theorem | Evidence |
 |---|---|---|---|---|
-| SU(4) | determinant one | su(4), dimension 15 | Covered, given simplicity of su(4) | `su4Theory` |
+| SU(4) | determinant one | su(4), dimension 15 | Covered; instance machine-checked | `ReviewSUN.su4Theory` in `lean/VariationSUN.lean` |
 | S(U(3)×U(1)) | elements of SU(4) commuting with D = diag(1,1,1,−3) | su(3) ⊕ u(1), dimension 9 | Excluded | `not_simple` |
-| SU(3) | block 3 ⊕ 1 | su(3), dimension 8 | Covered, given simplicity of su(3) | Note 2, section 5 |
+| SU(3) | block 3 ⊕ 1 | su(3), dimension 8 | Covered in principle; our Lean instance `su3Theory` is for the defining representation on ℂ³ | Note 2, section 5 |
 
 The hypothesis is lost and regained along the chain. It depends on the Lie algebra of each group and passes neither to subgroups nor to overgroups.
 
@@ -41,7 +41,8 @@ theorem not_simple : ¬ su3u1.IsSimple
 theorem su3u1_le_su4 : SU3U1.imageGroup ≤ SU4.imageGroup
 theorem lie_le : SU3U1.lie ≤ SU4.lie
 
--- lean/SU4Skeleton.lean
+-- lean/SU4Skeleton.lean: ReviewSU4.su4Theory, conditional on simplicity
+-- (lean/VariationSUN.lean proves the hypothesis and the unconditional ReviewSUN.su4Theory)
 theorem su4Theory (h : su4.IsSimple) : ∃ C : WilsonFamily su4, WilsonRegularity C ∧
     ∀ p : ℕ → ℕ, StrictMono p → ∃ q : ℕ → ℕ, StrictMono q ∧
     ∃ T : Hierarchy C, T.Properties (p ∘ q) :=
@@ -50,7 +51,7 @@ theorem su4Theory (h : su4.IsSimple) : ∃ C : WilsonFamily su4, WilsonRegularit
 
 ## 2. SU(4)
 
-With a proof of `su4.IsSimple`, the theorem gives for SU(4) everything it gives for SU(2). The constants, by our evaluation of the code's definitions (Note 2, section 5):
+The theorem gives for SU(4) everything it gives for SU(2); `lean/SU4Skeleton.lean` states the instance conditionally on simplicity of su(4), and `lean/VariationSUN.lean` proves that hypothesis and the instance. The constants, by our evaluation of the code's definitions (Note 2, section 5):
 
 | Quantity | SU(4), defining representation |
 |---|---|
@@ -61,7 +62,7 @@ With a proof of `su4.IsSimple`, the theorem gives for SU(4) everything it gives 
 
 The same Lie algebra appears as SO(6) in its vector representation, a second covered instance with Casimir 24 and slope 1.115.
 
-A simplicity proof for su(4) on the model of the SU(2) file (`YM/Examples/SU2.lean`, explicit matrices and commutators) means a basis of 15 matrices and a case analysis on the nonzero coefficient of an ideal element. A proof for general su(N) through elementary matrices is the better investment. We have left both undone.
+The simplicity proof in `lean/VariationSUN.lean` works for general su(N) through elementary matrices, which avoids the 15-matrix case analysis that a copy of the SU(2) file (`YM/Examples/SU2.lean`) would need.
 
 ## 3. S(U(3)×U(1))
 
@@ -109,7 +110,7 @@ A simplicity proof for su(4) on the model of the SU(2) file (`YM/Examples/SU2.le
 
 | Task | Use of the example |
 |---|---|
-| Formal instance beyond SU(2) | Prove `IsSimple` for su(4), or for su(N), and apply `su4Theory` |
+| Formal instance beyond SU(2) | Done for SU(N): `suN_simple` and `suNTheory` (Note 10). Other classical and exceptional groups remain |
 | Extending the statement to semisimple groups | Allow one coupling per simple factor; the theory is then a product, and the trace coefficient stays 3·dim 𝔤/π⁴ |
 | Abelian factors | Treat U(1) separately as a free field; S(U(3)×U(1)) shows how the clauses `running` and `nonfree` must change |
 | Any future mass-gap argument | Check it against S(U(3)×U(1)), where the gap is false, and against broken su(4), where the gauge coupling is asymptotically free and the photon is massless |

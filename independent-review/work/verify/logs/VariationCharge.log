@@ -1,0 +1,5 @@
+'ReviewCharge.centre_in_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewCharge.charge_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewCharge.singlet_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+WALL=2.64 s MAXRSS=6681304 KB
+EXIT=0

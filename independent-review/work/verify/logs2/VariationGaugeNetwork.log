@@ -1,0 +1,6 @@
+'ReviewNetwork.hop_star' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewNetwork.hop_gaugeAct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewNetwork.hop_pow_gaugeAct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewNetwork.moment_gaugeAct' depends on axioms: [propext, Classical.choice, Quot.sound]
+WALL=2.71 s MAXRSS=6724616 KB
+EXIT=0

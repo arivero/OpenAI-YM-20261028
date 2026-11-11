@@ -278,5 +278,6 @@ We read the public statement in full, the top layers of the proof, the assessmen
 | Group's runner: integrity, review modules, Comparator on three targets | All passed | §6.3 |
 | Group's copy of the submission | Byte-identical to the OpenAI repository | §6.1 |
 | Probes of the public statement | Four machine-checked probes (A, B, D, E) | §4.2, `lean/SpecProbes.lean`, `lean/ZeroInsertionProbe.lean` |
+| Instances beyond SU(2), added by this review | `suN_simple` for every N ≥ 2; `su3Theory`, `su4Theory`, `su5Theory` | `lean/VariationSUN.lean`, `notes/10-LEAN-VARIATIONS.md` |
 
 **Status of this document:** unreviewed by any third party. It summarizes a machine-checked proof that we rebuilt and audited at the level described, and it interprets a mathematical argument that we read through the assessment and the top of the code.

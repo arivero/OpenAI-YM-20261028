@@ -4,8 +4,10 @@ import YM.Gauge.Lie
 /-! Skeleton written for the independent review (not part of the submission).
 
 The public theorem applies to SU(4) as soon as a proof of `su4.IsSimple` is
-supplied. That proof is the only missing piece; the submission instantiates
-SU(2) only (`ConcreteSU2.lean`). -/
+supplied; the submission instantiates SU(2) only (`ConcreteSU2.lean`). This file states
+the conditional instance `ReviewSU4.su4Theory`. `VariationSUN.lean` proves the hypothesis
+for `ReviewSUN.suN 2`, which has the same definition as `ReviewSU4.su4` (the two files
+cannot import each other), and gives the unconditional instance `ReviewSUN.su4Theory`. -/
 set_option autoImplicit false
 noncomputable section
 namespace ReviewSU4
