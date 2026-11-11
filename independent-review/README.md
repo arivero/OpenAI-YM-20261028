@@ -30,6 +30,7 @@ Each note answers one question raised after the main review. They are commentary
 | [notes/04-KALUZA-KLEIN.md](notes/04-KALUZA-KLEIN.md) | Can the proof be reshaped into a Kaluza–Klein setting? |
 | [notes/05-DIMENSIONS-AND-STRINGS.md](notes/05-DIMENSIONS-AND-STRINGS.md) | What is special about four dimensions, and where does string theory stand (2, 10 and 26 dimensions)? |
 | [notes/06-SPECTRAL-TRIPLES.md](notes/06-SPECTRAL-TRIPLES.md) | Can the proof be recast with spectral triples? |
+| [notes/07-PIONS-AND-NUCLEONS.md](notes/07-PIONS-AND-NUCLEONS.md) | What can be said about pions and nucleons from S(U(3)×U(1))? |
 
 ## Findings in brief
 
