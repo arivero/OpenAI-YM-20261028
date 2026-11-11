@@ -71,10 +71,13 @@ The reservations of the group and of this review, each with its evidence, are li
 
 ## 5. Hints of work beyond pure Yang–Mills
 
-**Planned repositories.** The org profile states: "We also maintain one results repository for each major category: YM, QCD, and chiralSU5", and defines chiralSU5 as "chiral SU(5) gauge theory". `YM/README.md` repeats it: "Proposals concerning QCD or chiral SU(5) should identify that category". Only `YM` exists. Our interpretation: the group expects submissions on QCD and on a chiral gauge theory with fermions; the documents stop short of saying any has arrived.
+**Planned repositories.** The org profile states: "We also maintain one results repository for each major category: YM, QCD, and chiralSU5", and defines chiralSU5 as "chiral SU(5) gauge theory". `YM/README.md` repeats it: "Proposals concerning QCD or chiral SU(5) should identify that category". Only `YM` exists. Our interpretation: the QCD category corresponds to the fermion construction that the October statement mentions; for chiral SU(5) the documents name the category without saying that a submission has arrived.
+
+**The group's October statement goes further than the release.** It describes the result as "the recent proof by OpenAI of the existence of quantum Yang-Mills theory, including coupling to fermions", and the group's rules give its purpose as evaluating "OpenAI's claimed construction of YM theory in four dimensions and QCD" (`.github/statements/2026-10-statement.pdf` and `rules-and-procedures-archived-2026-11-08.pdf`). A construction with fermions is therefore claimed by OpenAI and under review; the October Lean release contains the pure gauge part only.
 
 **More OpenAI material exists outside the release.**
 
+- The informal proofs: "the full 1147-page LLM proofs" in the October statement.
 - A second submission: `YM/README.md` lists "OpenAI, 4 November 2026 | work in progress", described in `docs/checks.md` as having "additional perturbative matching claims".
 - An informal proof manuscript: the assessment "does not draw on the separate informal proof manuscript".
 - A private development repository `YM-lean/OpenAI-YM` (source of the group's check files, commit `1dec9fa`) and a private `math-commons/yang-mills`.

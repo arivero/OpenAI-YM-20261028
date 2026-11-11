@@ -18,6 +18,14 @@ The review was produced on 11 November 2026 with Claude Fable 5.2 in Claude Code
 
 Local absolute paths in logs and scripts appear as `/path/to/ym-release`, the directory that held the two clones and this review. Where the reports say `review/…`, read this directory. The 32 MB table of all 250,319 declarations (`work/audit/declarations.tsv`), three large scan and graph files, and the group runner's `runs/` records are left out; `lean/OwnAudit.lean` and the group's `scripts/verify.py` regenerate them.
 
+## Follow-up notes
+
+Each note answers one question raised after the main review. They are commentary of the same independent status.
+
+| Note | Question |
+|---|---|
+| [notes/01-PROVENANCE.md](notes/01-PROVENANCE.md) | Where do the methods of the proof come from? |
+
 ## Findings in brief
 
 1. **The proof compiles and the kernel accepts it.** `lake build` passed in 2 h 45 min on Lean 4.32.0 with the pinned Mathlib; the public theorem `YangMills.jointExistence`, the detailed theorem `YangMills.constructed` and the SU(2) corollary depend on `propext`, `Classical.choice` and `Quot.sound` only; our own kernel replay accepted the 93,999 declarations they use.
