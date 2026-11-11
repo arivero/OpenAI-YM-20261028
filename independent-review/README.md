@@ -32,6 +32,7 @@ Each note answers one question raised after the main review. They are commentary
 | [notes/06-SPECTRAL-TRIPLES.md](notes/06-SPECTRAL-TRIPLES.md) | Can the proof be recast with spectral triples? |
 | [notes/07-PIONS-AND-NUCLEONS.md](notes/07-PIONS-AND-NUCLEONS.md) | What can be said about pions and nucleons from S(U(3)×U(1))? |
 | [notes/08-FREE-REMARKS.md](notes/08-FREE-REMARKS.md) | Free remarks by Claude Fable 5.2 |
+| [notes/09-FERMION-DOUBLING.md](notes/09-FERMION-DOUBLING.md) | What do the sources show about fermions, and how could doubling be handled? |
 
 ## Findings in brief
 

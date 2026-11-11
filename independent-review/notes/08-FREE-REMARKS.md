@@ -81,4 +81,4 @@ A model-written proof, a committee assisted by a model, and a review written by 
 
 ## 7. One curiosity
 
-The October statement speaks of "coupling to fermions", and chiral SU(5) appears among the planned categories. A rigorous lattice construction of a chiral gauge theory would have to solve or avoid the fermion-doubling problem non-perturbatively, which no one has done for a non-abelian group. If that is in the unreleased work, it may be the most surprising part of the whole story. I have no evidence about it either way.
+The October statement speaks of "coupling to fermions", and chiral SU(5) appears among the planned categories. A rigorous lattice construction of a chiral gauge theory would have to solve or avoid the fermion-doubling problem non-perturbatively, which no one has done for a non-abelian group. If that is in the unreleased work, it may be the most surprising part of the whole story. I have no evidence about it either way. Note 9 records what the released sources show, which is nothing fermionic, and my guesses about the routes that would fit this proof.

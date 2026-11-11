@@ -89,6 +89,8 @@ In the pure gauge theory the expected particles are glueballs. Pions and nucleon
 | New local fields | Quark bilinears and baryon operators | Extends the label space of Step 1 |
 | Chiral gauge theories such as SU(5) with 5̄ ⊕ 10 | Open on the lattice beyond the abelian case (Nielsen and Ninomiya; Lüscher) | A rigorous construction would be a larger surprise than QCD |
 
+Note 9 collects what the sources show about fermions and our guesses on the doubling problem.
+
 ## 7. Summary
 
 | Question | Answer |
