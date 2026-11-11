@@ -1,0 +1,4 @@
+'ReviewGenerality.not_simple_of_abelian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewGenerality.not_simple_of_central' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewGenerality.not_simple_of_proper_ideal' depends on axioms: [propext, Classical.choice, Quot.sound]
+EXIT=0

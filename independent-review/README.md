@@ -25,6 +25,7 @@ Each note answers one question raised after the main review. They are commentary
 | Note | Question |
 |---|---|
 | [notes/01-PROVENANCE.md](notes/01-PROVENANCE.md) | Where do the methods of the proof come from? |
+| [notes/02-GENERALITY.md](notes/02-GENERALITY.md) | Which gauge groups does the theorem cover? |
 
 ## Findings in brief
 
